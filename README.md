@@ -1,2 +1,2 @@
 # modul-320-lernjournal
-Just a other Lernhournal
+- [17.08.2022](./src/17.08.2022)
