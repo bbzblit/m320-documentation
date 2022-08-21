@@ -9,7 +9,7 @@ public class MyClass{
 }
 ```
 ### Constructor
-Eine Klasse in Java hat immer einen oder mehrere Konstruktoren. Defaultmässig wird immer einen Konstruktor ohne Parameter erstellt. Unter einem Konstruktor kann man sich einfach gesagt eine Metho vorstellen, die aufgerufen wird, wenn die Klasse Inizialisiert wird. Der Aufbau eines Konstruktors ist fast gleich wie der einer Methode. Der einzige Unterschied besteht darin, dass Konstruktoren **KEINEN** Rückgabewert haben (Auch nicht `void`) und der Name immer des der Klasse entspricht.
+Eine Klasse in Java hat immer einen oder mehrere Konstruktoren. Defaultmässig wird immer ein Konstruktor ohne Parameter erstellt. Unter einem Konstruktor kann man sich einfach gesagt eine Methode vorstellen, die aufgerufen wird, wenn die Klasse initialisiert wird. Der Aufbau eines Konstruktors ist fast gleich wie der einer Methode. Der einzige Unterschied besteht darin, dass Konstruktoren **KEINEN** Rückgabewert haben (auch nicht `void`) und der Name immer der Klasse entspricht.
 
 ```java
 public class MyClass{
@@ -23,7 +23,7 @@ public class MyClass{
 ```
 
 ### Static
-Methode in Klassen können etwender `static` sein oder nicht. Der Unterschied besteht darin, dass statische Methoden global Erreichbar. Dass selbe gilt auch für Attribute.
+Methoden in Klassen können entwender `static` sein oder nicht. Der Unterschied besteht darin, dass statische Methoden global erreichbar sind. Dasselbe gilt auch für Attribute.
 ```java
 public class MyClass{
   public static void staticMethod(){
@@ -52,11 +52,11 @@ public class Main{
 ```
 
 ### Benutzen einer Klasse
-Eine Klasse kann mit dem `new` Keyword inialized werden (`MyClass myClass = new MyClass()`). Anschlissend ist man in der Lage auf nicht statische variablen und  Methoden aus der Klasse zuzugreifen.
+Eine Klasse kann mit dem `new` Keyword initialisiert werden (`MyClass myClass = new MyClass()`). Anschliessend ist man in der Lage, auf nicht statische Variablen und  Methoden aus der Klasse zuzugreifen.
 
 ### Good Practice
 1. Java Klassen sind in PascalCase geschrieben d.h. `MyClass` **nicht** `myClass` oder `my_class`
-2. Klassen Attribute sind in camelCase geschrieben (eine Ausnahme stellen Konstruktoren dar) d.h. `myAttribut` **nicht** `my-attribut` oder `my_attribut`
-3. Attribute sollte **IMMER** auf private gestellt werden. Man sollte über sie nur über sogenannte `Getter` und `Setter` zugreifen können.
+2. Klassenattribute sind in camelCase geschrieben (eine Ausnahme stellen Konstanten dar) d.h. `myAttribut` **nicht** `my-attribut` oder `my_attribut`
+3. Attribute sollen **IMMER** auf privat gestellt werden. Man sollte über sie nur über sogenannte `Getter` und `Setter` zugreifen können.
 ### Umsetzung
-Ich hab das ganze oben beschriebenen Beispielhaft an der [Konto](./resources/index.md#konto) Klasse umgesetzt.
+Ich hab das oben Beschriebenen beispielhaft an der [Konto](./resources/index.md#konto) Klasse umgesetzt.
