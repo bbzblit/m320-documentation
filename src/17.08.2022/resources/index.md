@@ -1,2 +1,2 @@
 # Resources
-Bei Resources handelt es sich um einen Folder. Aus diesem grun wird er nicht von Github Pages aus erreichbar sein.
+Bei Resources handelt es sich um einen Folder. Aus diesem Gründen ist er nicht von GithubPages aus erreichbar
