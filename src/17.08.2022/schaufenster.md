@@ -40,11 +40,11 @@ public class MyClass{
 
 public class Main{
   public static void main(String ... args){
-      MyClass.staticMethod(); -> "Hello Static Method"
-      MyClass.classMethod(); -> "Error"
+      MyClass.staticMethod(); // -> "Hello Static Method"
+      MyClass.classMethod(); // -> "Error"
       
       MyClass myClass = new MyClass();
-      myClass(); -> "Hello Class Method"
+      myClass(); // -> "Hello Class Method"
   }
 
 }
