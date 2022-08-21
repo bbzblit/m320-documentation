@@ -53,3 +53,8 @@ public class Main{
 
 ### Benutzen einer Klasse
 Eine Klasse kann mit dem `new` Keyword inialized werden (`MyClass myClass = new MyClass()`). Anschlissend ist man in der Lage auf nicht statische variablen und  Methoden aus der Klasse zuzugreifen.
+
+### Good Practice
+1. Java Klassen sind in PascalCase geschrieben d.h. `MyClass` **nicht** `myClass` oder `my_class`
+2. Klassen Attribute sind in camelCase geschrieben (eine Ausnahme stellen Konstruktoren dar) d.h. `myAttribut` **nicht** `my-attribut` oder `my_attribut`
+3. Attribute sollte **IMMER** auf private gestellt werden. Man sollte über sie nur über sogenannte `Getter` und `Setter` zugreifen können.
