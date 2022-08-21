@@ -59,4 +59,4 @@ Eine Klasse kann mit dem `new` Keyword inialized werden (`MyClass myClass = new 
 2. Klassen Attribute sind in camelCase geschrieben (eine Ausnahme stellen Konstruktoren dar) d.h. `myAttribut` **nicht** `my-attribut` oder `my_attribut`
 3. Attribute sollte **IMMER** auf private gestellt werden. Man sollte über sie nur über sogenannte `Getter` und `Setter` zugreifen können.
 ### Umsetzung
-Ich hab das ganze oben beschriebenen Beispielhaft an der [Konto](./resources/index.md#konto) Kasse umgesetzt.
+Ich hab das ganze oben beschriebenen Beispielhaft an der [Konto](./resources/index.md#konto) Klasse umgesetzt.
