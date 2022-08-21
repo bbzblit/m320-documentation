@@ -64,14 +64,14 @@ public class Konto {
 	
 	public void addAmount(double amount) {
 		this.kontostand = this.kontostand + amount;
-		this.logs.add(String.format("[Time: %s] Added %s to konto. New balanace %s", LocalDateTime.now(), 
-				amount, this.kontostand ));
+		this.logs.add(String.format("[Time: %s] Added %s to konto. New balanace %s", 
+			LocalDateTime.now(), amount, this.kontostand ));
 	}
 	
 	public void removeAmount(double amount) {
 		this.kontostand = this.kontostand - amount;
-		this.logs.add(String.format("[Time: %s] Removed %s from konto. New balanace %s", LocalDateTime.now(), 
-				amount, this.kontostand ));
+		this.logs.add(String.format("[Time: %s] Removed %s from konto. New balanace %s",
+			LocalDateTime.now(), amount, this.kontostand ));
 	}
 	
 	public void updateAmout(double amount, String operator) {
@@ -80,7 +80,8 @@ public class Konto {
 		else if(operator.equals("-"))
 			removeAmount(amount);
 		else
-			throw new IllegalArgumentException("Operator" + operator + "is not a valid operatior (+, -)");
+			throw new IllegalArgumentException("Operator" + operator + 
+				"is not a valid operatior (+, -)");
 	}
 	public List<String> getLogs(){
 		return this.logs;
