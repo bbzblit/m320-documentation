@@ -2,18 +2,18 @@
 
 
 ## Meine Vorkentnisse
-Ich arbeite seit etwa 3/4 Jahren am Backed einer Webapplication. Für das Backend wird Java framework `Spring Boot` verwendet. Aus diesem Grund kenne ich mich bereits relativ gut mit OOP in Java aus. Ich vermuete, dass relativ viel von dem wo wir anschauen werden repetition ist. Denoch erhoffe ich mir vom Modul, dass ich auch ein paar neue Erkentnise daraus mitnehmen werde. 
+Ich arbeite seit etwa 3/4 Jahren am Backend einer Webapplication. Für das Backend wird das Java Framework `Spring Boot` verwendet. Aus diesem Grund kenne ich mich bereits relativ gut mit OOP in Java aus. Ich vermute, dass relativ viel von dem was wir anschauen werden Repetition sein wird. Dennoch erhoffe ich mir vom Modul, dass ich auch ein paar neue Erkentnise daraus mitnehmen werde. 
 
 ## Was habe ich heute gemacht
 - **Repetition der Grundlagen**
-  Anhand eines Beispielprojektes habe wir die Grundlagen von Java (Welche wir im letzen Modul gelernt haben) repetiert. Die Aufgabe war es, ein simples Programm zu schreiben, das ein Bankkonto verwaltet. Der User sollte in der Lage sein, Geld von seinem Konto Abzuheben und welches Draufzuzahlen und den aktuellen Kontostand anzuzeigen. Dabei musste das Programm nicht Objektorientiert geschrieben sein. 
+  Anhand eines Beispielprojektes haben wir die Grundlagen von Java (welche wir im letzen Modul gelernt haben) repetiert. Die Aufgabe war es, ein simples Programm zu schreiben, das ein Bankkonto verwaltet. Der User sollte in der Lage sein, Geld von seinem Konto abzuheben und welches darauf zuzahlen sie den aktuellen Kontostand anzuzeigen. Dabei musste das Programm nicht objektorientiert geschrieben sein. 
 
 - **Schreiben des Programmes im OOP Context**  
-  Die nächste Arbeit war es, dass ganze Programm in OOP umzuschreieben. Um das zu realisieren habe ich eie Klasse `Konto` erstellt, welche die gesame Logik enthält. Diese Aufgabe konnte ich aufgrund meiner Vorkentnisse relativ schnell und ohne grössere Probleme lösen. 
+  Die nächste Arbeit war es, das ganze Programm in OOP umzuschreiben. Um das zu realisieren, habe ich eine Klasse `Konto` erstellt, welche die gesamte Logik enthält. Diese Aufgabe konnte ich aufgrund meiner Vorkenntnisse relativ schnell und ohne grössere Probleme lösen. 
  
 - **Repetition Datamanagment von Java**
-Auch wurde kurz Repetiert, wie Variablen in Java im Arbeitsspeicher gespeichert werden. Zwar war mir auch dass bereis bewusst, denoch fand ich es eine gute Repetition.
-Das wichtigste daran ist die Tatsache , warum man **nur** primitive Datentypen in Java mit dem `==` Operator vergleichen kann. In Java gibt es einen Stack und einen Heab. Alle Deklariereten Variabelen werden auf dem Stack gespeichert. Bei allen Primitiven Datentypen steht hinter der Variable auch gleich den Wert der Variable. Bei Komplexen Datentypen wird ein neues Object auf dem Heap angelegt. Anschlissend wird einen Referenzwert auf dem Stackgespeichert. Der `==` Operator überprüft in Java allerdings lediglich auf gleicheit von Wert welcher auf dem Stack gespeichert ist. Aus diesem Grund ist eine  `==` Vergleich in den meisten Fällen immer `false`. Aus diesem Grund sollte man Objekte immer mit der `.equals()` Method vergleichen. Bei der `.equals()` Methode die von der `java.lang.Object` Klasse geert wird. Diese kan anschlissend vom ersteller der Klase so geschrieben werden, dass es auf Gleichheit der Variablen und nicht auf gleichheit der Referenz überprüft.
+Auch wurde kurz repetiert, wie Variablen in Java im Arbeitsspeicher gespeichert werden. Zwar war mir auch das bereits bewusst, dennoch fand ich es eine gute Repetition.
+Das Wichtigste daran ist die Tatsache, warum man **nur** primitive Datentypen in Java mit dem `==` Operator vergleichen kann. In Java gibt es einen Stack und einen Heap. Alle deklarierten Variabelen werden auf dem Stack gespeichert. Bei allen primitiven Datentypen steht hinter der Variable auch gleich der Wert der Variable. Bei komplexen Datentypen wird ein neues Objekt auf dem Heap angelegt. Anschliessend wird ein Referenzwert auf dem Stack gespeichert. Der `==` Operator überprüft in Java allerdings lediglich auf Gleichheit vom Wert, welcher auf dem Stack gespeichert ist. Aus diesem Grund ist ein  `==` Vergleich in den meisten Fällen immer `false`. Deshalb sollte man Objekte immer mit der `.equals()` Method vergleichen. Bei der `.equals()` Methode, handelt es sich um eine Methode, welche von der `java.lang.Object` Klasse geerbt wird und benutzt werden kann, um selber einen equals Vergleich zu implementieren.
 
 ```
 Stack                           Heap
@@ -25,10 +25,10 @@ myObject | @f2a4d -----------> | @f2a4d       |
 ```
 
 ## Was ist mir heute klar geworden? 
-Am heutigen Tag, habe ich nichts dazugelernt. Das liegt ledigilich daran, dass ich alle Behandelten Themen bereits ohne Probleme behersche. Die ersten beiden Behandelten Themen waren wirklich Repetition auf einem ganz tiefen Niveau. Die Repetition vom Datamanagement in Java fand ich dann schon etwas interesanter. 
+Am heutigen Tag habe ich nichts absolut Neues dazugelernt. Das liegt daran, dass ich die behandelten Themen bereits bei der Lehrfirma seit einiger Zeit anwenden darf und damit beherrsche. Die ersten beiden behandelten Themen waren damit Repetition für mich. Das Datamanagement in Java fand ich interessanter. Auch hier gab es einige Dinge, die ich schon kannte. Aber ich hatte bisher weniger praktische Erfahrungen in diesem Bereich.
 
 ## Ziele
-Mein Ziel ist es, dieses Modul auch mit einem 6er abzuschliessen. Um das zu erreichen neheme ich mir vor immer voll dabei zu sein (auch wenn es sich nur um Repetition handelt). Ausserdem nehme ich mir vor, immer mein Lernjournal sauber und rechtzeitig zu schreiben.
+Mein Ziel ist es, dieses Modul auch mit einem 6er abzuschliessen. Um das zu erreichen, nehme ich mir vor, immer voll dabei zu sein, egal ob es um Repetition oder um neue Themen geht. Ausserdem nehme ich mir vor, immer mein Lernjournal sauber und rechtzeitig zu schreiben.
 
 ## Reflektion
-Diese Woche war eigentlich nur reihne Repetition. Aus diesem Grund konnte ich meine Aufgaben schnell und ohne Probleme erledigen.  
+Diese Woche war mehrheitlich Repetition. Aus diesem Grund konnte ich meine Aufgaben schnell und ohne Probleme erledigen. Die Themen machen mir aber Spass. Ich freue mich auf die kommenden Stunden.  
