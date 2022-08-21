@@ -3,7 +3,7 @@
 ## D1G
 ### Aufbau eine Klasse
 Eine Klasse ist in Java immer gleich aufgebaut. Sie begint mit dem acces Modefier anschlissend kommt immer `class` gefolgt von dem Namen der Klasse und einer geschweifteten Klammer. 
-```
+```java
 public class MyClass{
     //Code goes here
 }
@@ -11,7 +11,7 @@ public class MyClass{
 ### Constructor
 Eine Klasse in Java hat immer einen oder mehrere Konstruktoren. Defaultmässig wird immer einen Konstruktor ohne Parameter erstellt. Unter einem Konstruktor kann man sich einfach gesagt eine Metho vorstellen, die aufgerufen wird, wenn die Klasse Inizialisiert wird. Der Aufbau eines Konstruktors ist fast gleich wie der einer Methode. Der einzige Unterschied besteht darin, dass Konstruktoren **KEINEN** Rückgabewert haben (Auch nicht `void`) und der Name immer des der Klasse entspricht.
 
-```
+```java
 public class MyClass{
 
    public MyClass( /* Args go here */ ){
@@ -24,7 +24,7 @@ public class MyClass{
 
 ### Static
 Methode in Klassen können etwender `static` sein oder nicht. Der Unterschied besteht darin, dass statische Methoden global Erreichbar. Dass selbe gilt auch für Attribute.
-```
+```java
 public class MyClass{
   public static void staticMethod(){
       System.out.println("Hello Static Method")
