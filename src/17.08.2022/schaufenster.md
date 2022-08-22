@@ -44,7 +44,7 @@ public class Main{
       MyClass.classMethod(); // -> "Error"
       
       MyClass myClass = new MyClass();
-      myClass(); // -> "Hello Class Method"
+      myClass.classMethod(); // -> "Hello Class Method"
   }
 
 }
