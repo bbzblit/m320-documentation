@@ -1,5 +1,6 @@
-# Lernjournal 17.08.2022
+[Back to main Page](./../../README.md)
 
+# Lernjournal 17.08.2022
 
 ## Meine Vorkentnisse
 Ich arbeite seit etwa 3/4 Jahren am Backend einer Webapplication. Für das Backend wird das Java Framework `Spring Boot` verwendet. Aus diesem Grund kenne ich mich bereits relativ gut mit OOP in Java aus. Ich vermute, dass relativ viel von dem was wir anschauen werden Repetition sein wird. Dennoch erhoffe ich mir vom Modul, dass ich auch ein paar neue Erkentnise daraus mitnehmen werde. 
