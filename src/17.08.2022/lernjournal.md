@@ -33,3 +33,6 @@ Mein Ziel ist es, dieses Modul auch mit einem 6er abzuschliessen. Um das zu erre
 
 ## Reflektion
 Diese Woche war mehrheitlich Repetition. Aus diesem Grund konnte ich meine Aufgaben schnell und ohne Probleme erledigen. Die Themen machen mir aber Spass. Ich freue mich auf die kommenden Stunden.  
+
+# Schaufenster
+In dieser Woche habe ich die Kompetenz `D1G` erledigt

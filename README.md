@@ -1,5 +1,10 @@
 # Modul-320-lernjournal
+
 - [17.08.2022 Resources](./src/17.08.2022/resources)
 - [17.08.2022 Lernjournal](./src/17.08.2022/lernjournal.md)
-- [17.08.2022 Schaufenster](./src/17.08.2022/schaufenster.md)
-
+# Schaufenster 
+- [HZ1 (A)](./src/schaufenster/HZ1.md)
+- [HZ2 (B)](./src/schaufenster/HZ2.md)
+- [HZ3 (C)](./src/schaufenster/HZ3.md)
+- [HZ4 (D)](./src/schaufenster/HZ4.md)
+- [HZ5 (E)](./src/schaufenster/HZ5.md)

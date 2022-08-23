@@ -1,6 +1,6 @@
-[Back to main Page](./../../README.md)
+[Back to main Page](./../README.md)
 
-# Schaufenster 17.08.2022
+# Schaufenster HZ3
 
 ## D1G
 ### Aufbau eine Klasse
