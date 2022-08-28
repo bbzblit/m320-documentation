@@ -4,7 +4,7 @@
 
 ## A1G 
 ### Aufbau eines Klassendiagramms
-Ein Klassendiagram besteht aus Mehreren Klassen mit Bezihungen untereinander. Jede einzelne Karte bildet eine einzelne Klasse dar. Dabei zeigt es an, welche Methoden, Attrbute und Konstruktoren die Klasse besitzt. Der Aufbau sollte relativ selbsterklärend anhand des unteren Beispieles sein. Acces Modefier können entweder `+` für `public` oder `-` für `private` sein. Ausserdem kann der Rückgabewert auch weggelassen werden, falls es sch dabei um `void` handelt. 
+Ein Klassendiagramm besteht aus mehreren Klassen mit Beziehungen untereinander. Jede einzelne Karte bildet eine einzelne Klasse dar. Dabei zeigt es an, welche Methoden, Attrbute und Konstruktoren die Klasse besitzt. Der Aufbau sollte relativ selbsterklärend anhand des unteren Beispieles sein. Acces Modefier können entweder `+` für `public` oder `-` für `private` sein. Ausserdem kann der Rückgabewert auch weggelassen werden, falls es sch dabei um `void` handelt. 
 ```java
 public class MyClass{
     public int attr1;
@@ -35,16 +35,16 @@ ___________________________________
 ```
 ## A1F
 ### Verbindungen zwischen den Klassen
-Eine einfachen Assoziation (Verbidung) ersteht, wenn man z.B. bei der einten Klasse ein Attribut inform von der anderen Klasse Verwendet. Dabei gibt man bei einer Assoziation immer die Multiplizität an.
+Eine einfachen Assoziation (Verbindung) entsteht, wenn man z.B. bei der einen Klasse ein Attribut in Form von der anderen Klasse verwendet. Dabei gibt man bei einer Assoziation immer die Multiplizität an.
 - **Genau X**<br/>
-Um zu sagen, dass es sich genau um `X` instanzen handelt wird einfach die Zahl `X` zu der Verbindung dazugeschrieben. Ein Beispiel von einer solchen Verbindung währe z.B.
+Um zu sagen, dass es sich genau um `X` Instanzen handelt, wird einfach die Zahl `X` zu der Verbindung dazugeschrieben. Ein Beispiel von einer solchen Verbindung wäre z.B.
 ```java
 public class Main{
     public final static Logger LOG = LoggerFactory.getLogger(Main.class);
 }
 ```
 - **Von X zu Y**<br/>
-Um zu sagen, dass man eine variable Anzahl im bereich von einer Ranche von Verbindungen hat, wird diese im Folgenden Syntax angegeben: `X..Y`. Ein Beispiel für eine solche verbindung währe
+Um zu sagen, dass man eine variable Anzahl im Bereich von einer Range von Verbindungen hat, wird diese im Folgenden Syntax angegeben: `X..Y`. Ein Beispiel für eine solche Verbindung wäre
 ```java
 public class Main{
      private Ship ship = new Ship[5]; 
@@ -52,8 +52,8 @@ public class Main{
 }
 
 ```
-- **Belibig**<br/>
-Natürlich kann es sich auch um eine Unbegrenzte Anzahl von Verbindungen handeln. Dies wird dann mithilfe des `*` dargestellt. 
+- **Beliebig**<br/>
+Natürlich kann es sich auch um eine unbegrenzte Anzahl von Verbindungen handeln. Dies wird dann mit Hilfe des `*` dargestellt. 
 ```java
 public class Main{
     private Set<Ship> ship = new LinkedHashSet<Ship>();
