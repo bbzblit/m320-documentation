@@ -53,6 +53,8 @@ Name: Ship
 +race() : void
 **************************************
 ```
+
+
 ## Was ist mir heute klar geworden?
 Am heutigen Tag, habe ich dazugelernt, was UML ist und wie man aus Java Klassen Diagramme zeichnen kann. Ich denke, dass ich das Zeichnen von Diagrammen aus Java Klasen relativ gut verstanden habe und so auch bei einem echten Projekt anwenden könnte. 
 
