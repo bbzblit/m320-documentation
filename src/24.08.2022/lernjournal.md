@@ -32,4 +32,32 @@ _________________________
 |_______________________|
 ```
 - **Mehrere Fachklassen**
-Gegen Ende des Unterrichtes habe ich noch anhand eines bestehenden Diagrams dieses in Java Implementiert. Dabei sollten wir 3 Klassen ``
+Gegen Ende des Unterrichtes habe ich noch anhand eines bestehenden Diagrams dieses in Java Implementiert. Dabei sollten wir 3 Klassen [`Main`](./resources/index.md#main), [`Ship`](./resources/index.md#ship) und [`Competition`](./resources/index.md#competition) implementieren. Die Methoden und Attribute der Klassen waren durch das Diagram bereits vorgegeben. Das einzige was anschliessend noch Implementiert werden musste war die Logik dahinter. 
+- **UML Generator**
+Da ich fürher fertig war mit den Aufgaben habe ich mich noch drangemacht einen UML Generator zu schreiben. Viele Tools besitzen zwar bereits eine Möglchkeit um bestehenden Java Code in ein UML zu verwandeln. Allerdings ist dieser bei den von mir getesteten Tools immer Kostenpflichtig. Aus diesem Grund habe ich mich dazu entschieden selbst eine Klasse zu implementieren, welche ein UML aus bestehenden Klassen generiert. So wurde also die Klasse [`UMLGenerator`](./resources/index.md#uml-generator) erschaffen. Dieser beinhalted 2 öffentliche Methoden. Mit der Methode `generateUml(Class cls)` ist man in der Lage, ein UML von einer einzelnen Klasse zu erstellen. Mit der 2. Methode `generateUmlByPackage(String packagename)` ist man in der Lage ein UML von allen Klassen und Subklassen von einem Package zu erstellen. Das Endergebniss sieht dann in etwa so aus
+```
+**************************************
+Package: dev.bbzbl.m320
+Name: Ship
+---
+-nummer : int
+-name : String
+-time : int
+---
++Ship(arg0 : int arg1 : String )
++getName() : String
++setName(arg0 : String ) : void
++getTime() : int
++setNummer(arg0 : int ) : void
++getNummer() : int
++race() : void
+**************************************
+```
+## Was ist mir heute klar geworden?
+Am heutigen Tag, habe ich dazugelernt, was UML ist und wie man aus Java Klassen Diagramme zeichnen kann. Ich denke, dass ich das Zeichnen von Diagrammen aus Java Klasen relativ gut verstanden habe und so auch bei einem echten Projekt anwenden könnte. 
+
+## Ziele
+In dieser Woche sind 3 neue Punkte (A1G, A1F und A1E) beim Schaufenster dazugekommen. Mein Ziel ist es nun, diese auf nächste Woche (oder zumindes so weit wie möglich) in meinem Schaufenster zu erledigen. 
+
+## Reflektion
+Ich denke, dass ich in dieser Woche sehr viel neues vorallem bezüglich UML dazugelernt habe. Ich denke, dass ich beim Thema relativ gut mitgekommen bin und alles soweit verstanden habe.
