@@ -70,7 +70,7 @@ public class Ship {
 	}
 }
 ```
-
+## Competition
 ```
 public class Competition {
 	private String name;
