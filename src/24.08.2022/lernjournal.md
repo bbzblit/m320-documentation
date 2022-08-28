@@ -63,3 +63,5 @@ In dieser Woche sind 3 neue Punkte (A1G, A1F und A1E) beim Schaufenster dazugeko
 
 ## Reflektion
 Ich denke, dass ich in dieser Woche sehr viel neues vorallem bezüglich UML dazugelernt habe. Ich denke, dass ich beim Thema relativ gut mitgekommen bin und alles soweit verstanden habe.
+## Schaufenster
+In dieser Woche habe ich die Kompetenzen [`A1G`](./../schaufenster/HZ1.md#a1g) und [`A1F`](./../schaufenster/HZ1.md#a1f) 
