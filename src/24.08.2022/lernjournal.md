@@ -31,5 +31,5 @@ _________________________
 |        Methoden       |
 |_______________________|
 ```
-
-
+- **Mehrere Fachklassen**
+Gegen Ende des Unterrichtes habe ich noch anhand eines bestehenden Diagrams dieses in Java Implementiert. Dabei sollten wir 3 Klassen ``
