@@ -36,14 +36,14 @@ ___________________________________
 ## A1F
 ### Verbindungen zwischen den Klassen
 Eine einfachen Assoziation (Verbidung) ersteht, wenn man z.B. bei der einten Klasse ein Attribut inform von der anderen Klasse Verwendet. Dabei gibt man bei einer Assoziation immer die Multiplizität an.
-- **Genau X**
+- **Genau X**<br/>
 Um zu sagen, dass es sich genau um `X` instanzen handelt wird einfach die Zahl `X` zu der Verbindung dazugeschrieben. Ein Beispiel von einer solchen Verbindung währe z.B.
 ```java
 public class Main{
     public final static Logger LOG = LoggerFactory.getLogger(Main.class);
 }
 ```
-- **Von X zu Y**
+- **Von X zu Y**<br/>
 Um zu sagen, dass man eine variable Anzahl im bereich von einer Ranche von Verbindungen hat, wird diese im Folgenden Syntax angegeben: `X..Y`. Ein Beispiel für eine solche verbindung währe
 ```java
 public class Main{
@@ -52,7 +52,7 @@ public class Main{
 }
 
 ```
-- **Belibig**
+- **Belibig**<br/>
 Natürlich kann es sich auch um eine Unbegrenzte Anzahl von Verbindungen handeln. Dies wird dann mithilfe des `*` dargestellt. 
 ```java
 public class Main{
