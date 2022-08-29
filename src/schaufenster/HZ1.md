@@ -46,17 +46,18 @@ public class Main{
 ```
 - **Von X zu Y**<br/>
 Um zu sagen, dass man eine variable Anzahl im Bereich von einer Range von Verbindungen hat, wird diese im Folgenden Syntax angegeben: `X..Y`. Ein Beispiel für eine solche Verbindung wäre
-
+<br/>
 
 ```java
 public class Main{
      private Ship ship = new Ship[5]; 
     //Getter and Setter
 }
+``` 
 
-```
 - **Beliebig**<br/>
 Natürlich kann es sich auch um eine unbegrenzte Anzahl von Verbindungen handeln. Dies wird dann mit Hilfe des `*` dargestellt. 
+<br/>
 
 ```java
 public class Main{
