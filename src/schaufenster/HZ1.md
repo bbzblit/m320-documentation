@@ -39,6 +39,7 @@ Eine einfachen Assoziation (Verbindung) entsteht, wenn man z.B. bei der einen Kl
 - **Genau X**<br/>
 Um zu sagen, dass es sich genau um `X` Instanzen handelt, wird einfach die Zahl `X` zu der Verbindung dazugeschrieben. Ein Beispiel von einer solchen Verbindung wäre z.B.
 ```java
+
 public class Main{
     public final static Logger LOG = LoggerFactory.getLogger(Main.class);
 }
