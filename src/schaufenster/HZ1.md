@@ -44,7 +44,7 @@ public class Main{
     public final static Logger LOG = LoggerFactory.getLogger(Main.class);
 }
 ```
-- **Von X zu Y**<br/>
+- **Von X zu Y** <br/>
 Um zu sagen, dass man eine variable Anzahl im Bereich von einer Range von Verbindungen hat, wird diese im Folgenden Syntax angegeben: `X..Y`. Ein Beispiel für eine solche Verbindung wäre
 <br/>
 
