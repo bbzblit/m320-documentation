@@ -11,3 +11,5 @@
 - [HZ3 (C)](./src/schaufenster/HZ3.md)
 - [HZ4 (D)](./src/schaufenster/HZ4.md)
 - [HZ5 (E)](./src/schaufenster/HZ5.md)
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9499259435788065"
+     crossorigin="anonymous"></script>
