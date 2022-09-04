@@ -41,3 +41,8 @@ System.out.println(0b11);     // 3
 System.out.println(017);      // 15 NOT 17
 System.out.println(0x1F);     // 31
 ```
+## Was ist mir heute klar geworden?
+Ich habe sehr viele wichtige neue Informationen in Java dazugelernt, welche ich nicht wusste. 
+
+## Ziele
+Mein Ziel ist es, dass ich in der nächsten Woche mein Lernjournal im Laufe der Woche und nicht erst am Sontagabend schreibe.  
