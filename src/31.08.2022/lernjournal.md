@@ -32,7 +32,7 @@ Ausserdem wusste ich nicht, dass man in Java zur besseren Lesbarkeit numerische 
 ```java
 int number = 1000;
 number = 1_0_0_0; //Will compile
-umber = 1__________0 //Will also compile
+number = 1__________0; //Will also compile
 ```
 Ich habe auch noch einen weiteren guten Punkt über numerischen Werten gelernt. Ich wusste, dass man in Java hexadezimale Werte mit `0x` und binäre Werte mit `0b` darstellen kann. Mir war allerdings **nicht** Bewusst, dass es noch einen weiteren Wert gibt. In java kann man auch das oktale System darstellen, indem man eine `0` vor die Zahl schreibt. Meiner Meinung nach kann das sehr gut und schnell zu einem schwer findbaren Bug führen und ist deshalb gut zu wissen.
 ```java
