@@ -4,6 +4,8 @@
 - [17.08.2022 Lernjournal](./src/17.08.2022/lernjournal.md)
 - [24.08.2022 Resources](./src/24.08.2022/resources)
 - [24.08.2022 Lernjournal](./src/24.08.2022/lernjournal.md)
+- [31.08.2022 Resources](./src/31.08.2022/resources)
+- [31.08.2022 Lernjournal](./src/31.08.2022/lernjournal.md)
 
 # Schaufenster 
 - [HZ1 (A)](./src/schaufenster/HZ1.md)
