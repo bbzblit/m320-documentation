@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"dev.bbzbl.m320","l":"Competition"},{"p":"dev.bbzbl.m320","l":"Main"},{"p":"dev.bbzbl.m320","l":"Ship"}];updateSearchResults();
