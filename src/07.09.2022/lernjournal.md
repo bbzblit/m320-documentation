@@ -23,3 +23,10 @@ public class Main{
 Nachdem ich die ganzen classen habe ich ganz einfach eine Javadoc Website daraus generiert. Dadurch habe ich jetzt eine übersichtlche Documentation bei der ich mich nur um den Inhalt und nicht um das desing kümmern musste [Documentation](./resources/javdoc/index.html).
 
 ## Reflexion
+Ich denke, dass ich diese Woche gut vorangekommen bin. Ich konnte mehrere Kompetenzen im Schaufenster erledigen und hab auch sonst alles gut verstanden. Zudem hab ich in dieser Woche auch etwas früher damit angefangen, mein Lernjournal zu schreiben.
+
+## Ziele
+Ich habe persönlich keine speziellen Ziele in der nächsten Woche für das Modul 320.
+
+## Kompetenzen
+Ich habe in dieser Woche an den Kompetenzen `C1G` und `C1F` gearbeitet. 
