@@ -20,3 +20,4 @@ public class Main{
 }
 
 ```
+Nachdem ich die ganzen classen habe ich ganz einfach eine Javadoc Website daraus generiert. Dadurch habe ich jetzt eine übersichtlche Documentation bei der ich mich nur um den Inhalt und nicht um das desing kümmern musste [Documentation](./resources/javdoc).
