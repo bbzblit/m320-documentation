@@ -66,13 +66,13 @@ Ich hab das oben Beschriebenen beispielhaft an der [Konto](./resources/index.md#
 ## D1F
 Eine Klasse in Java kann nicht nur aus primitiven Datentypen bestehen. Ein gutes Beispiel dafür sind Strings, bei denen es sich ja auch um eine Klasse mit allem drum und dran handelt. Die einfachste Beziehung zwischen 2 Klassen stellt die `Assoziation` dar. Dabei wird eine Instanz von einem Objekt in einer anderen Klasse weiterverwendet. Ein Beispiel dafür währe die Klasse [`Weapon`](./../31.08.2022/resources/index.md#weapon). Diese hat 2 Attribute, bei einem dieser Attribute (`name`) handelt es sich um einen String.
 
-```mermaid
+```mermaid!
 graph TD;
     String-->Weapon;
  ```
 Nun kann man natürlich auch selber erstellte Klassen wiederverwenden. Wie auch beim Attribut Name in der Klasse deklarieren, um nachher darauf Zugriff zu haben. 
  Das ganze habe ich auch diese Woche beispielhaft in einem Java [`Game`](./../31.08.2022/resources/) umgesetzt. Ich hab dazu auch ein kleines UML erstellt, um die Beziehungen zwischen den Klassen darzustellen.
-```mermaid
+```mermaid!
 graph TD;
     Fight-->Main;
     String-->Character;
