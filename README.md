@@ -8,7 +8,8 @@
 - [31.08.2022 Lernjournal](./src/31.08.2022/lernjournal.md)
 - [07.09.2022 Resources](./src/07.09.2022/resources)
 - [07.09.2022 Lernjournal](./src/07.09.2022/lernjournal.md)
-
+- [14.09.2022 Resources](./src/14.09.2022/resources)
+- [14.09.2022 Lernjournal](./src/14.09.2022/lernjournal.md)
 # Schaufenster 
 - [HZ1 (A)](./src/schaufenster/HZ1.md)
 - [HZ2 (B)](./src/schaufenster/HZ2.md)
