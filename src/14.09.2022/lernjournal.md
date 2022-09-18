@@ -2,3 +2,20 @@
 
 # Lernjournal 14.09.2022
 ## Was habe ich diese Woche gemacht?
+- **Vererbung** <br/>
+Am Anfang der Stunde haben wir UML Diagramme für 3 Fahrzeugtypen (Auto, Elektroauto und LKW) erstellt. Dabei ist schnell aufgefallen, das obwohl es sich dabei um unterschidliche Fortbewegungsmittel handelt gewisse Grundstruktur bei allen dreien vorhanden ist. Ein Beispiel dafür währe die Methode `.losfahren()`, die logischerweise bei allen 3 Fahrzeugen vorhanden sein muss. Nun währe es natürlich cool, wenn es eine Möglichkeit gäbe, dass man die Logik hinter der Methode nur einmal erstellen müsste, und sie dann in allen anderen Klassen verwenden könnte. Die Lösung dafür in Java ist Vererbung. Mithilfe von Vererbung können alle Methoden und Attribute und deren Logik einer anderen Klasse übergeben werden. Um eine Klasse in Java zu vererben kann man das Keyword `extends` verwenden.
+```java
+/**
+ChildClass erbt von ParrentClass
+*/
+public class ChildClass extends ParrentClass{
+
+}
+```
+In `Java` kann im gegensatz zu anderen Programiersprachen wie z.B. `C++` oder auch `Python` immer nur eine Klasse extenden. Das liegt unteranderm daran, dass das extenden von mehreren Klassen sehr fehleranfällig sein kann. Wenn z.B. 2 Klassen das selbe Methode `.start()` haben ist immer die Frage, welche von beiden Implementierten Methoden nun aufgerufen wird. Etwas anderst sieht es da bei dem Implementieren von Interfaces aus. Diese können in Java belibig häufig Implementiert werden. Interfaces beinhalten im gegensatz zu Klassen allerdings auch nur die Struktur und keine Logik. Ein Beispiel von mehreren Interfaces stellt die `java.lang.String` Klasse dar. 
+```java
+public final class String
+    implements java.io.Serializable, Comparable<String>, CharSequence,
+               Constable, ConstantDesc {
+}
+```
