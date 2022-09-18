@@ -23,3 +23,36 @@ public final class String
 ```
 - **Implementieren von Vererbungen** <br/>
 ALs nächstes haben wir in Pairprogramming Vererbung anhand eines Beispieles Implementiert. In dem Beispiel gibt es 3 Klassen die Klasse `Car` dient als Parrent Klasse für die beiden Childklassen `UsedCar` und `CrashedCar`. Bei der Übung kam auch als erstes einmal das `super` Keyword vor. Dieses ist relativ ähndlich zu dem `this` Keyword. Der Unterschied bezieht sich lediglich darauf, dass das `this` auf Eelemente und Methode aus der Aktuellen Klasse zugreifen kann wobei `super` benutzt werden kann um Methoden in der Parentklasse aufzurufen. 
+
+- **Statische/Dynamische Polymorphie** <br/>
+**Statische Polymorphie** <br/>
+Statische Polymorphie hat erstmal nichts mit statischen Methoden oder Attributen zu tun. Bei Statischer Polymorphie werden Methoden oder auch Construktoren über laden. D.H dass es mehrere Ausführungen von einenm Konstruktor gibt, der sich nur anhand der Parameter unterscheidet. 
+
+```java
+public class Car{
+    public Car(){}             // Die Konstruktoren unterscheiden sich nur
+    public Car(String name){}  // anhand der Parameter
+}
+```
+**Dynamische Polymorphie** <br/>
+Bei Dynamischer Polymorphie werden die Konstruktoren ncht um Parameter erweiteter sondern überschrieben. Dynamische Polymorphie kommt z.B. dann zu Ensatz, wenn sich etwas in der Logik in der Childklasse ändernt. 
+```java
+public class Parent{
+    public void doSomething(){}
+}
+
+public class Child extends Parent{
+    
+    @Overide
+    public void doSomething(){
+        System.out.println("Now I'm doing something");
+    }
+}
+
+```
+
+## Was habe ich gelernt?
+In dieser Woche konnte ich nochmals gut das Thema Vererbung repetieren. Dabei habe ich neu hinzugelernt, was der Unterschied zwischen Statischer und Dynamischer  Polymorphie ist. Auserdem war mir zwar vorher schon bewusst, dass man in Java nur eine Klasse extenden kann. ALlerdings waren mir die Hntergründe dafür nicht bekannt. Vermutlich auch daher, dass ich auch in Python noch **nie** nur auf die Idee gekommen währe 2 Klassen zu extenden. 
+
+## Reflexion
+Ich denke, dass ich diese Woche gut vorangekommen bin. Ich konnt gut das Thema Verbung repetieren und konnte dazu auch noch neues dazulernen. 
