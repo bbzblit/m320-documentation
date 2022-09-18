@@ -25,6 +25,8 @@ public final class String
 ALs nächstes haben wir in Pairprogramming Vererbung anhand eines Beispieles Implementiert. In dem Beispiel gibt es 3 Klassen die Klasse `Car` dient als Parrent Klasse für die beiden Childklassen `UsedCar` und `CrashedCar`. Bei der Übung kam auch als erstes einmal das `super` Keyword vor. Dieses ist relativ ähndlich zu dem `this` Keyword. Der Unterschied bezieht sich lediglich darauf, dass das `this` auf Eelemente und Methode aus der Aktuellen Klasse zugreifen kann wobei `super` benutzt werden kann um Methoden in der Parentklasse aufzurufen. 
 
 - **Statische/Dynamische Polymorphie** <br/>
+
+
 **Statische Polymorphie** <br/>
 Statische Polymorphie hat erstmal nichts mit statischen Methoden oder Attributen zu tun. Bei Statischer Polymorphie werden Methoden oder auch Construktoren über laden. D.H dass es mehrere Ausführungen von einenm Konstruktor gibt, der sich nur anhand der Parameter unterscheidet. 
 
