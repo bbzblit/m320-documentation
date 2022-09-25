@@ -35,7 +35,18 @@ public class ElektroCar extends Car{
 }
 ```
 - **Interfaces**<br/>
-Ein Interface ist der Faktor her eine Abstrakte Classe, bei der alle Methoden per default abstract und public sind.   
+Ein Interface ist der Faktor her eine Abstrakte Classe, bei der alle Methoden per default abstract und public sind. Ein interface wird anderst als eine Klasse mit dem `implements` Keyword implementiert. Hingegen zu KLassen können in java bis zu `65535` interfaces in einer Klasse implementier werden. Das liegt daran, dass ein Interface keine Logik beinhaltet -> egal ob 2 verschiedene Interfaces die selbe Methode implementieren muss der Javacompiler nicht zwischen 2 verscheidenen Codeblöcken entscheiden, da das implementieren von Logik nur in einer Klasse statfinden kann. 
+
+```java
+public interface MyInterface {
+    public void myMethod();
+}
+public class MyClass implements MyInterface {
+    public void myMethod() {
+        System.out.println("Hello World!");
+    }
+}
+```
 ## Was habe ich gelernt?
 
 ## Reflexion
