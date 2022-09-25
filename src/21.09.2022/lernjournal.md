@@ -42,6 +42,7 @@ public interface MyInterface {
     public void myMethod();
 }
 public class MyClass implements MyInterface {
+    @Override
     public void myMethod() {
         System.out.println("Hello World!");
     }
