@@ -49,5 +49,6 @@ public class MyClass implements MyInterface {
 }
 ```
 ## Was habe ich gelernt?
-
+Ich habe in dieser Woche eine gute Reflektion über Interfaces und abstrakten Klassen gehabt. Dabei habe ich auch ein paar Interesseante Fakten dazugelernt wie z.B., dass in Java Interfaces defaultmäsig alle Methoden public sind.
 ## Reflexion
+In dieser Woche bin ich gut vorangekommen. Ich konnte alles im Untericht behandelte gut und konnte daher auch die Aufgaben ohne grössere Probleme lösen. In der nächsten Woche muss ich noch an den Handlungskompetenzen weiterarbeiten, da ich diese Woche da nicht sonderlich weit gekommen bin.
