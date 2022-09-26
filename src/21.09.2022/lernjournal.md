@@ -42,7 +42,7 @@ Ein Interface ist der Faktor her eine abstrakte Klasse, bei der alle Methoden pe
 public interface MyInterface {
     public void myMethod();
 }
-public Ein Interface ist der Faktor her eine abstrakte Klasse, bei der alle Methoden per Default Abstract und Public sind. Ein Interface wird anders als eine Klasse mit dem `Implements` Keyword implementiert. Hingegen zu Klassen können in Java bis zu `65535` Interfaces in einer Klasse implementier werden. Das liegt daran, dass ein Interface keine Logik beinhaltet -> egal ob 2 verschiedene Interfaces dieselbe Methode implementieren muss der Javacompiler nicht zwischen 2 verschiedenen Codeblöcken entscheiden, da das implementieren von Logik nur in einer Klasse stattfinden kann.class MyClass implements MyInterface {
+public class MyClass implements MyInterface {
     @Override
     public void myMethod() {
         System.out.println("Hello World!");
