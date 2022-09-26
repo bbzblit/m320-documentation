@@ -4,6 +4,8 @@
 ## Was habe ich diese Woche gemacht?
 - **Abstrakte Classen**<br/>
 Als erstes haben wir zusammen in der Klasse angeschaut, was Abstrakte Klassen sind und wie sie Funktioneren. Wenn man eine Klasse in Java mit dem `abstract` Keyword anschreibt, kann man von dieser Klasse keine Instanz mehr erstellen. Nun könnte man sich natürlich fragen, warum sollte das einen Vorteil bringen. Die Antwort darauf ist relativ einfach. Die Abstracte Klasse kann immernoch in anderen Klassen implementiert werden. Um auf das Beispiel aus der letzten Woche zu referenzieren könnte man nun die Klasse `Car` abstrakt gestalten. Dadurch beinhaltet die Klasse `Car` zwar immernoch alle notwendigen Attribute und Methoden mitsamit ihrere Logik kann allerdings nichtmehr istanziert werden (Was ohnehin nie beabsichtigt war).
+
+
 ```java 
 //ParentClass.java
 public abstract class ParentClass{}
