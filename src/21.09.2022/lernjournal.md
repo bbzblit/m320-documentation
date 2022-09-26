@@ -15,7 +15,7 @@ public abstract class ChildClass extends ParentClass{}
 //Main.java
 public class Main{
     public static void main(String ... args){
-         ParentClass parentClass = new ParrentClass(); //Does not compile because class in abstract
+         ParentClass parentClass = new ParrentClass(); //Does not compile because class is abstract
          ParentClass childClass = new ChildClass(); //Does compile because it is inizalized with child class
     }
 }
