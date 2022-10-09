@@ -15,7 +15,7 @@
 # Schaufenster 
 - [HZ1 (A)](./src/schaufenster/HZ1.md)
 - [HZ2 (B)](./src/schaufenster/HZ2.md)
-- [HZ3 (C)](./src/schaufenster/HZ3.md)
-- [HZ4 (D)](./src/schaufenster/HZ4.md)
-- [HZ5 (E)](./src/schaufenster/HZ5.md)
+- [HZ2 (C)](./src/schaufenster/HZ3.md)
+- [HZ3 (D)](./src/schaufenster/HZ4.md)
+- [HZ4 (E)](./src/schaufenster/HZ5.md)
  
