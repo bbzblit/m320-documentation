@@ -33,3 +33,16 @@ Wenn man sich einmal die JavaDoc für die [`String`](https://docs.oracle.com/jav
 | `@return` | Deffiniert, was eine Methode returnt |
 | `@throws` | Deffiniert unter welchen Exeptions unter welchen Umständen wertwartet werden können. |
 <br/>
+
+### Inline Tags
+In gewissen Fällen kann es auch Sinvoll sein einen Tag in einem Text zu verwenden. So kann man es z.B. benutzen, um bestimmte Sachen gennauer zu formatieren, oder um auf andere Methoden/Kassen zu verweisen. Einen `inline Tag` ist fast gleich aufgebaut wie ein normaler Tag. Der Unterschied besteht darin, dass er nicht für die ganze Linie gilt sondern nur für den Bereich zwischen den `{}`. 
+```java
+/**
+ * 
+ * Class which contains the logic of a ship.
+ * Needs a {@link dev.bbzblit.m320.Port} to start
+ * @author Yanni8
+ */
+public class Ship {
+}
+```
