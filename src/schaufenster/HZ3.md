@@ -46,3 +46,8 @@ In gewissen Fällen kann es auch Sinvoll sein einen Tag in einem Text zu verwend
 public class Ship {
 }
 ```
+### Wichtigste Inline Tags
+| Tag | Usecase |
+|---|---|
+| `{@link }` | Funktionert gleich wie der `@see` Tag |
+| `{@code }` | Formatiert den Block anderst um ihn herforzuheben |
