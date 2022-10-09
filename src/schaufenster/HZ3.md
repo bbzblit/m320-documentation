@@ -1,6 +1,6 @@
 [Back to main Page](./../../README.md)
 
-# Schaufenster HZ3
+# Schaufenster HZ2
 
 ## C1G Verwendungszweck von JavaDoc <br/>
 Java Doc ist eine Möglichkeit um Sourcecode in Java zu dokumentieren. Dabei wird die Dokumentation direckt im Editor geschrieben. Das spart nicht nur Zeit und Ressourcen, sondern ist auch für den Leser der Dokumentation viel angenehmer. In grösseren Projekten verwendet man gerne mal mehrere externe Librarys wie z.B. `Spring Boot` und `Lombok. Nun muss man natürlich wissen, welche Klassen man überhaupt verwenden kann und wie diese in Verbindung stehen. Ohne JavaDoc hätte man nun 2 verschiedene Webseiten, die komplett anders in ihrer Struktur aufgebaut sind. Durch JavaDoc sehen diese beiden Webseiten allerdings visiuel erstmal geleich aus und sind auch gleich aufgebaut [Spring Boot](https://docs.spring.io/spring-framework/docs/current/javadoc-api/), [Lombok](https://projectlombok.org/api/). <br/>
