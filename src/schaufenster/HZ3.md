@@ -21,3 +21,8 @@ public class Ship {
 }
 ```
 Nun konnte ich in Eclipse über `Project` > `Generate Java Doc` die Javadoc für das Projekt generieren. Diese musste ich dann nur noch auf einen Webserver laden und fertig war die [Documentation](./../07.09.2022/resources/javdoc/dev/bbzbl/m320/package-summary.html) . 
+## C1E Implementieren von JavaDoc anhand der wichtigsten Tags
+Wenn man sich einmal die JavaDoc für die [`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) Klasse etwas genauer anschaut fällt einem schnell auf, dass gewisse Bereiche etwas herforgehoben sind. Ein Beipiel dafür ist ein Berreich, in dem man Methoden und Klassen sieht die etwas mit `String` zu tun haben (See Also). Natürlich könnte man das ganze mit HTML Tags formatieren das ganze währe allerdings extrem aufwändig und auch redundante Arbeit. Aus diesem Grund gibt es in JavaDoc sogennante Tags, die sehr an Java Annotationen errinern. Ein Tag beginnt immer mit einem `@` Zeichen gefollgt von dem Tag name im Falle von Verweise währe das z.B. `@see`. Alles was anschlissend nachher an Text kommt wird speziell in der JavaDoc angezeigt. Es gibt eine grosse Anzahl an JavaDoc Tags, die man auch nicht alle auswendig kennen muss. ALlerdings hat es Vorteiele, wenn man die Wichtigsten kennt.
+| Tag | Usecase |
+|---|---|
+|   |   |
