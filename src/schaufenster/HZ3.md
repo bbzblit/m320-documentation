@@ -25,4 +25,11 @@ Nun konnte ich in Eclipse über `Project` > `Generate Java Doc` die Javadoc für
 Wenn man sich einmal die JavaDoc für die [`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) Klasse etwas genauer anschaut fällt einem schnell auf, dass gewisse Bereiche etwas herforgehoben sind. Ein Beipiel dafür ist ein Berreich, in dem man Methoden und Klassen sieht die etwas mit `String` zu tun haben (See Also). Natürlich könnte man das ganze mit HTML Tags formatieren das ganze währe allerdings extrem aufwändig und auch redundante Arbeit. Aus diesem Grund gibt es in JavaDoc sogennante Tags, die sehr an Java Annotationen errinern. Ein Tag beginnt immer mit einem `@` Zeichen gefollgt von dem Tag name im Falle von Verweise währe das z.B. `@see`. Alles was anschlissend nachher an Text kommt wird speziell in der JavaDoc angezeigt. Es gibt eine grosse Anzahl an JavaDoc Tags, die man auch nicht alle auswendig kennen muss. ALlerdings hat es Vorteiele, wenn man die Wichtigsten kennt.
 | Tag | Usecase |
 |---|---|
-|   |   |
+| `@see` | Verweisst auf Methoden oder Klassen, die in Verbindung mit der Klasse stehen oder relevat sein könnten. <br/> Wichtig ist, dass man das ganze im Format `<package>.<Class>(#<Method>)` angibt, dass JavaDoc auch gleich einen Hyperlink zur anderen Klasse einfügen kann. |
+| `@author` | Name des Authors, der die Kasse geschrieben hat. |
+| `@since` | Spezifiziert die Version, seit wann die Klasse Implementiert ist |
+| `@version` | Version der Klasse **NCHT** seit wann es implementiert ist |
+| `@param` | Beschreibt, was für Parameter erwartet werden. Jeder Parameter hat sein eigene `@param` Annotation gefollgt von dem namen und der Verwendung. |
+| `@return` | Deffiniert, was eine Methode returnt |
+| `@throws` | Deffiniert unter welchen Exeptions unter welchen Umständen wertwartet werden können. |
+<br/>
