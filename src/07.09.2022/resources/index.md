@@ -99,7 +99,8 @@ public class Competition {
 
 		for (Ship s : this.ships) {
 			if (s != null) {
-				System.out.println("Schiff Nr: " + s.getNr() + " Name: " + s.getName() + " Zeit: " + s.getTime());
+				System.out.println("Schiff Nr: " + s.getNr() 
+				+ " Name: " + s.getName() + " Zeit: " + s.getTime());
 			}
 		}
 	}
