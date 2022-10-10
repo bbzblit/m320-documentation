@@ -68,4 +68,23 @@ Eine Klasse in Java kann nicht nur aus primitiven Datentypen bestehen. Ein gutes
 Nun kann man natürlich auch selber erstellte Klassen wiederverwenden. Wie auch beim Attribut Name in der Klasse deklarieren, um nachher darauf Zugriff zu haben. 
  Das ganze habe ich auch diese Woche beispielhaft in einem Java [`Game`](./../31.08.2022/resources/) umgesetzt. Ich hab dazu auch ein kleines UML erstellt, um die Beziehungen zwischen den Klassen darzustellen.
 
+
+## D1E 
+Wenn 2 Klassen untereinander eine Beziehung haben kommt es eigentlich immer vor, dass sie auch miteinander interagieren müssen. So kommt es z.B. vor, dass beim aufrufen einer Methode weitere Methoden von anderen Klassen aufgerufen werden. In diesem kleinen Beispiel haben wir 2 Klasse (`A` und `B`). Die beiden Klassen haben eine Beziehung untereinander, die daraus besteht, dass die Klasse ein KLassenatribut von `B` hat. Wenn wir nun an der Klasse `A` die Methode `.doSomething()` aufrufen wird an dem Klassenattribut `b` auch gleich die Methode `.otherMethod()` aufgerufen. Dadurch interagiert die Klasse `A` mit der Klasse `B`  
+
+```java
+public class A{
     
+    B b = new B();
+    
+    public void doSomething(){
+        this.b.otherMethod();
+    }
+    
+}
+
+public class B{
+    public void otherMethod(){}
+}
+
+```
