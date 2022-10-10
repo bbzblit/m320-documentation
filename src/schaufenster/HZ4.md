@@ -220,3 +220,28 @@ public class Main{
 ```
 ### Zusammenfassung
 Dynamische und Statische Polymorphie unterscheidet sich darin, dass bei Statischer Polymorphie bereits bei Compilezeit feststeht welche Methode aufgerufen wird wobei allerdings bei Dynamischer dies erst on runtime entschcieden wird.
+
+## D2E
+
+### Abstrakte Klassen
+Wie bereits im Kapitel D2G beschrieben geht es immer darum, möglichst erweiterbaren und gut wartbaren Code zu schreiben. Aus diesem Grund gibt es vererbung zwischen Klassen. Wie bereits berschrieben kann man dadurch ganz einfach die Logik und die Struktur von einer Klasse in mehreren Weiterverwenden. Nun gibt es aber auch Szenarien wo wir nur die Struktur übernehnen möchten.
+Um einmal auf das Beispiel mit der Methode `.tanken()` zurückzukehren könnte man nun 2 Klassen `Car` und `ElectroCar` implementieren wollen. Schnell sollte auffallen, dass man logischerweise ein Elektorauto anderst betankt als ein Konventionelles Auto. Nun könnte man natürlich dahherkommen und wieder 2 Verschiedene Klassen implementieren die nichts miteinander zu tun haben.
+```java
+
+public class Car{
+    public void tanken(){
+        System.out.println("tanke benzien");
+    }
+    
+    public void hupen(){}
+}
+
+public class ElectroCar{
+    public void tanken(){
+        System.out.println("tanke strom");
+    }
+    
+    public void hupen(){}
+}
+
+```
