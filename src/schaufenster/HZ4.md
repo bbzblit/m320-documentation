@@ -88,3 +88,13 @@ public class B{
 }
 
 ```
+### Kapselung
+In Java kann man die Verwendung von Methoden, Konstruktoren oder auch Attributen in anderen Klassen einschränken oder gänzlich verbieten. In Java gibt es 4 verschiedene Accessmodefiere, die man alle auswendig kennen sollte. Am häufigsten wird aber definitif Private und Public verwendet. 
+
+
+| Modefiere | Beschreibung |
+|---|---|
+| Public | Öffentlich bedeutet, dass die Objekt für alle Klassen in egal welchem Package verfügbar sind. Er ist auch der Access Modefiere, der die Verwendung nicht einschränkt <br/> _Er wird mit dem `public` keyword deklariert_ |
+| Private | Private bedeutet, dass das Objekt nur aus der eigenen Klasse heraus erreichbar ist. Er ist also quasi genau das gegenteil von Public. <br/> _Er wird mit dem `private` keyword deklariert_ |
+| Protected  | Mit Protected wird ein Objekt nur aus allen Klassen aus dem gleichen Package und Klassen welche das besagte Objekt implementieren her erreichbar. <br/> _Er wird mit dem `protected` keyword deklariert_ |
+| Package | Package bedeutet, dass das Objekt **nur** aus dem gleichen Package heraus erreichbar ist.  <br/> _Er muss nicht mit einem Keyword deklariert werden alle Methoden/Konstruktoren und Attribute in Klassen sind von default her Package_ |
