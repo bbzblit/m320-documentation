@@ -100,12 +100,11 @@ In Java kann man die Verwendung von Methoden, Konstruktoren oder auch Attributen
 | Package | Package bedeutet, dass das Objekt **nur** aus dem gleichen Package heraus erreichbar ist.  <br/> _Er muss nicht mit einem Keyword deklariert werden alle Methoden/Konstruktoren und Attribute in Klassen sind von default her Package_ |
 
 ### Getter und Setter
-Eine Folge von Kapselung in Java sind sogennante Getter und Setter. In Java gilt es grundsätlich als good Practise wenn man **NIEMALS** direckt auf Attribute in Klasse zugreift. Das hat den Simplen Grund, dass man dadurh validieren kann ob ein eingegeben Wert valid ist. 
-
+Eine Folge von Kapselung in Java sind sogennante Getter und Setter. In Java gilt es grundsätlich als good Practise wenn man **NIEMALS** direckt auf Attribute in Klasse zugreift. Das hat den Simplen Grund, dass man dadurh validieren kann ob ein eingegeben Wert valid ist. In diesem Beispiel z.B. haben wir eine Klasse `Player` mit einem Attribut `health`. Nun wollen wir sicher stellen, dass `health` niemals unter 0 ist. Wenn `health` public währe könnte man mit `player.health = -1;` ganz einfach das Attribut `health` negatif setzen. In diesem Beispiel allerdings haben wir eine setter Methode, in der wir Validieren, ob `health` auch wirklich einen valider Wert ist.
 ```java
 
 public class Player{
-    private int health;
+    private int health = 100;
     
     public void setHealth(final int health){
         if(health <= 0){
