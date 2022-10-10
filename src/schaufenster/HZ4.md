@@ -98,3 +98,23 @@ In Java kann man die Verwendung von Methoden, Konstruktoren oder auch Attributen
 | Private | Private bedeutet, dass das Objekt nur aus der eigenen Klasse heraus erreichbar ist. Er ist also quasi genau das gegenteil von Public. <br/> _Er wird mit dem `private` keyword deklariert_ |
 | Protected  | Mit Protected wird ein Objekt nur aus allen Klassen aus dem gleichen Package und Klassen welche das besagte Objekt implementieren her erreichbar. <br/> _Er wird mit dem `protected` keyword deklariert_ |
 | Package | Package bedeutet, dass das Objekt **nur** aus dem gleichen Package heraus erreichbar ist.  <br/> _Er muss nicht mit einem Keyword deklariert werden alle Methoden/Konstruktoren und Attribute in Klassen sind von default her Package_ |
+
+### Getter und Setter
+Eine Folge von Kapselung in Java sind sogennante Getter und Setter. In Java gilt es grundsätlich als good Practise wenn man **NIEMALS** direckt auf Attribute in Klasse zugreift. Das hat den Simplen Grund, dass man dadurh validieren kann ob ein eingegeben Wert valid ist. 
+
+```java
+
+public class Player{
+    private int health;
+    
+    public void setHealth(final int health){
+        if(health <= 0){
+            throw new IllegalArgumentException("Health has to be bigger than 0");
+        }
+        this.health = health;
+    }
+    
+    public int getHealth(){
+        return this.health;
+    }
+}
