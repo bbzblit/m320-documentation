@@ -232,8 +232,10 @@ public class Car{
     public void tanken(){
         System.out.println("tanke benzien");
     }
-    
-    public void hupen(){}
+        
+    public void hupen(){
+        System.out.println("hupe");
+    }
 }
 
 public class ElectroCar{
@@ -241,7 +243,35 @@ public class ElectroCar{
         System.out.println("tanke strom");
     }
     
-    public void hupen(){}
+    public void hupen(){
+        System.out.println("hupe");
+    }
 }
 
+```
+Der Code würde theoretisch funktionieren allerdings ist er weder gut wartbar noch skalierbar. Zudem fällt auf, dass beide Klassen eine Methode `.hupen()` haben. Diese verändert sich von der Logik her nicht und bleibt in beiden KLassen gleich. Auch hier währe es praktisch eine Möglichkeit zu haben diese weiterzuverwenden. 
+Die lösung dafür sind Abstrakte Klassen. Abstrakte Klassen können mit dem `abstract` Keyword erstellt werden. Sie zeichnen sich dadurch aus, dass sie nicht inizalisiert werden können und das eine Methode in ihr auch Abstrakt gesetzt werden kann. Abstrakte Methoden haben keinen Body und dadurch auch keine Logik. Das Implementieren der Logik ist dann sache von der nächsten Childklasse welche **nicht** abstrakt ist. 
+
+```java
+public abstract class Fahrzeug{
+
+    public abstract void tanken();
+
+    public void hupen(){
+        System.out.println("hupe");
+    }
+}
+public class Car extends Fahrzeug{
+    @Override
+    public void tanken(){
+        System.out.println("tanke benzien");
+    }
+}
+
+public class ElectroCar extends Fahrzeug{
+    @Override
+    public void tanken(){
+        System.out.println("tanke strom");
+    }
+}
 ```
