@@ -152,3 +152,30 @@ public class Car extends Fahrzeug{}
 public class Truck extends Fahrzeug{}
 
 ```
+### Implementieren von mehreren Klassen
+In Java kann man **nicht** mehrere Klassen in einer Klasse vererben. Das liegt simpel daran, dass für den Fall, dass die beiden Klassen gleiche Methoden enthalten der Compiler nicht entscheiden kann welche er verwenden sollte. 
+
+```java
+
+public class A{
+    public void randomMethod(){
+        System.out.println("A");
+    }
+}
+public class B{
+   public void randomMethod(){
+        System.out.println("B"); 
+    }
+}
+
+public class C extend A,B{}
+
+public class Main{
+    public static void main(String ... args){
+        C c = new C();
+        c.randomMethod(); // -> doesnt know if it should print out A or B 
+    }
+}
+
+```
+In anderen Programmiersprachen wie `C++` oder auch `Python` ist es möglich mehrere Klassen zu vererben. ALlerdings habe ich es auch noch in keiner von denen Programmiersprachen gebraucht.
