@@ -59,3 +59,4 @@ public class Ship {
 
 ### Meine Umsetzung
 
+Ich habe das ganze natürlich auch einmal anhand eines kleinen Testprojektes umgesetzt. Dazu habe ich die bereits bestehende [`Documentation`](./../07.09.2022/resources/index.md#wichtigste-klassen) mit den nötigen Tags versehen. 
