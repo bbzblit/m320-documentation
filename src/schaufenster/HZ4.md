@@ -179,3 +179,44 @@ public class Main{
 
 ```
 In anderen Programmiersprachen wie `C++` oder auch `Python` ist es möglich mehrere Klassen zu vererben. ALlerdings habe ich es auch noch in keiner von denen Programmiersprachen gebraucht.
+
+## D2F
+
+Im Objekt Orientierten Programmieren unterscheidet mann zwischen `Dynamischer Polymorphie` und `Statischer Polymorphie`. 
+- **Statische Polymorphie** <br/>
+Bei Sttaischer Polymorphie werden Methoden oder auch Konstruktoren überladen. Dabei hat man mehrere Funktionen mit dem gleichen namen. Sie unterscheiden sich nur darin, dass sie unterschiedliche Parameter haben. Welche Methode am Ende aufgerufen wird entscheidet sich lediglich daran, welche Parameter mitgegeben werden.  
+
+```java
+public class StaticPolymorphie{
+    public StaticPolymorphie(){}
+    public StaticPolymorphie(String param){}
+}
+```
+- **Dynamische Polymorphie**<br/>
+Bei Dymaischer Polymorphie werden gleiche Methoden mit gleichen Parameter mehrmals implementiert. Das ist natürlich nur möglich wenn Vererbung vorhanden ist. Welche Methode am Ende aufgerufen wird entscheidet sich dann daran, an welchem Objekt sie aufgerufen wird.
+
+```java
+
+public class A{
+    public void print(){
+        System.out.println("A");
+    }
+}
+
+public class B extends A{
+    @Overide
+    public void print(){
+        System.out.println("B");
+    }
+}
+public class Main{
+    public static void main(String ... args){
+        A a = new A();
+        a.print(); // Prints "A" beacause Inizalized class is A
+        a = new B();
+        a.print(); // Prints "B" beacause it is on runtime an Objekt of B class
+    }
+}
+```
+### Zusammenfassung
+Dynamische und Statische Polymorphie unterscheidet sich darin, dass bei Statischer Polymorphie bereits bei Compilezeit feststeht welche Methode aufgerufen wird wobei allerdings bei Dynamischer dies erst on runtime entschcieden wird.
