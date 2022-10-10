@@ -120,3 +120,35 @@ public class Player{
     }
 }
 ```
+
+## D2G
+Im Programmieren sollte man Redundanter Code möglichst verhindern, da dieser aufwändig zum Warten ist und man auch im Falle, dass man etwas anpassen möchte dieses imemr an mehreren Stellen machen muss. Es kann vorkommen, dass man mehrere Klassen haben, die Methoden haben, welche in der Logik gleich sind. Ein Beispiel dafür währen die beiden Klassen `Car` und `Truck`.  Beide klassen haben in diesem Fall eine Methode `.starten()` oder auch eine Methode `.tanken()`. Nun könnte man natürlich 2 Verschiedene Klassen machen und 2 mal die Methode implementieren.
+
+```java
+public class Car{
+    public void tanken(){
+        System.out.println("Tanke auf");
+    }
+}
+
+public class Truck{
+    public void tanken(){
+        System.out.println("Tanke auf");
+    }
+}
+
+```
+In dem Beispiel oben ist es kein Aufwand 2 mal die Methode `.tanken()` zu schreiben. Nun könnte es aber auch sein dass noch eine weitere Klasse `PKW` hinzukommt oder dass die Methode `.tanken()` nichtmehr benötigt wird. Nun währe es natürlich praktisch wenn es eine Möglichkeit gäbe diese Methode nur einmal implementieren zu müssen. Dadurch könnte man leicht neue Klassen hinzufügen oder auch die Methode löschen falls sie nichtmehr benötigt werden würde. In diesem Moment kommt Vererbung ins Spiel. In Java kann man Klassen vererben. Dadurch sind alle Methoden und Attribute von der Parentklasse auch autmatisch in der Childklasse implementiert. In Java kann man eine Klasse in eine andere mit dem `extends` Keyword implementieren.
+
+```java
+public class Fahrzeug(){
+    public void tanken(){
+        System.out.println("Tanke auf");
+    }
+}
+
+public class Car extends Fahrzeug{}
+
+public class Truck extends Fahrzeug{}
+
+```
