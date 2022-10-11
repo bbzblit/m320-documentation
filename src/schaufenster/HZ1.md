@@ -4,7 +4,7 @@
 
 ## A1G 
 ### Grundlagen OOP
-Die Idee hinter Opjekt Orientierten Programmieren ist es, alles in Klassen zu speichern von denen jede Klasse seine eigene Aufgabe hat. Dabei kann jedes Objekt mit anderen Objekten über schnittstellen (methoden) komunizieren. Der Vorteil davon ist eine sehr grosse Austauschbarkeit und eine bessere Struktur. Falls man eine bestimmte Funktion vom Programm abändern möchte muss man nur wenige Klassen editieren oder gegebenfalls austauschen. Auch kann man durch das Hinzufügen von Objekten relativ schnell eine Applikation erweitern. Anderst als bei anderen Programmiersprachen wie `Python` oder auch `C++` wird man in Java quasi in das Objektorientierte Denken gezwungen. Dass sieht man z.B. daran, dass man kein Java Programm ohne mindestens eine Klasse erstellen kann <br/>
+Die Idee hinter objektorientiertem Programmieren ist es, alles in Klassen zu speichern von denen jede Klasse seine eigene Aufgabe hat. Dabei kann jedes Objekt mit anderen Objekten über Schnittstellen (Methoden) kommunizieren. Der Vorteil davon ist eine sehr grosse Austauschbarkeit der Klassen und eine bessere Struktur. Falls man eine bestimmte Funktion vom Programm abändern möchte, muss man nur wenige Klassen editieren oder gegebenfalls austauschen. Auch kann man durch das Hinzufügen von Objekten relativ schnell eine Applikation erweitern. Anders als bei anderen Programmiersprachen, wie `Python` oder auch `C++`, wird man in Java quasi in das objektorientierte Denken gezwungen. Das sieht man z.B. daran, dass man kein Java Programme ohne mindestens eine Klasse erstellen kann <br/>
 **Hello World Beispiele:**<br/>
 **Java:**
 ```java
@@ -27,19 +27,19 @@ int main(int argc, char** argv) {
 ```python
 print("Hello World")
 ```
-Beim OOP ist die Idee, dass man zuerst überlegt welche Funkionen und dadurch Klassen ein Programm haben soll. Anschlissend kann man damit beginnen diese Klassen zu erstellen und zu Implementieren. Eine Möglichkeit um die ganzen Klassen zu Planen sind sogennante UMLs, welche ich im HZ2 behandle. 
+Beim OOP ist die Idee, dass man zuerst überlegt welche Funkionen und dadurch Klassen ein Programm haben soll. Anschliessend kann man damit beginnen, diese Klassen zu erstellen und zu implementieren. Eine Möglichkeit, um die ganzen Klassen zu planen sind sogennante UMLs, welche ich im HZ2 behandle. 
 
 ## A1F
 
-Im OOP Kontext kommt es immer wieder vor, dass einzelne Klassen miteinander Interagieren. Wie bereits beschrieben ist eine Klasse immer für ein einzelnes Teilproblem zuständig. Dadurch sollte es schon nach dem zerlegen des Problemes in mehrere Teilprobleme klar sein, wie die Klassen untereinander interagieren müssen. Es kann sehr hilfreich sein, wenn man das ganze in einem UML Diagram darstellt, damit mann nicht die Übersicht über alle Klassen verliert.
+Im OOP Kontext kommt es immer wieder vor, dass einzelne Klassen miteinander interagieren. Wie bereits beschrieben ist eine Klasse immer für ein einzelnes Teilproblem zuständig. Dadurch sollte es schon nach dem zerlegen des Problemes in mehrere Teilprobleme klar sein, wie die Klassen untereinander interagieren müssen. Es kann sehr hilfreich sein, wenn man das Ganze in einem UML Diagramm darstellt, damit man nicht die Übersicht über alle Klassen verliert.
 
 
 ## A1E
 ### Herangehensweise 
-Wenn man ein neuses Projekt bekommt kann der Erfolg des Projektes an der Herangehensweise liegen. Genau das selbe gilt auch bei einem Programm. Es ist wichtig, dass man eine Herangehensweise findet, die für einen Passt und mit der man arbeiten kann. Ich habe für mich selber folgende Herangehensweise gefunden.
-1. **Problem Analysieren und in Teilprobme zerlegen** <br/>
-Als erstes lese ich mir die genaue Anforderung an das Programm durch. Danach versuche ich das grosse Problem in mehrere kleine Teilprobleme zu zerlegen. Dadurch ist es einfacher diese zu lösen und schlussendlich in Code zu fassen. Manchmal kann ich auch Teilprobleme mehrmals wiederverwenden woduch ich unnötige Redundanz verliere. Um das ganze anhand eines Beispieles genauer zu Verdeutlichen kann man die Aufgabe Pizza Backen nehmen. Ein Teilproblem währe in diesem Fall dann Teig machen oder auch Ofen einstellen usw.
+Wenn man ein neues Projekt bekommt, kann der Erfolg des Projektes an der Herangehensweise liegen. Genau dasselbe gilt auch bei einem Programm. Es ist wichtig, dass man eine Herangehensweise findet, die für die Person ppasst und mit der man arbeiten kann. Ich habe für mich selber folgende Herangehensweise gefunden.
+1. **Problem analysieren und in Teilprobleme zerlegen** <br/>
+Als erstes lese ich mir die genaue Anforderung an das Programm durch. Danach versuche ich das grosse Problem in mehrere kleine Teilprobleme zu zerlegen. Dadurch ist es einfacher diese zu lösen und schlussendlich in Code zu fassen. Manchmal kann ich auch Teilprobleme mehrmals wiederverwenden, woduch ich unnötige Redundanz vermeide. Um das Ganze anhand eines Beispieles genauer zu verdeutlichen, kann man die Aufgabe Pizza backen nehmen. Ein Teilproblem wäre in diesem Fall dann Teig machen oder auch Ofen einstellen usw.
 2. **PseudoCode/UML** <br/>
-Je nach grösse des Programmes beginne ich im nächsten Schrit damit, ein UML zu erstellen oder auch das ganze einmal in Pseudocode aufzuschreiben. In diesem Schritt defeniere ich dann auch zwingend wie die einzelnen Klassen miteinander zusammenspel oder wie die Vererbungshirarchie aussieht. 
+Je nach Grösse des Programmes beginne ich im nächsten Schritt damit, ein UML zu erstellen oder auch das Ganze einmal in Pseudocode aufzuschreiben. In diesem Schritt definiere ich dann auch zwingend, wie die einzelnen Klassen miteinander zusammenspielen oder wie die Vererbungshierarchie aussieht. 
 3. **Coden**
-Im letzen Schritt beginne ich damit, dass Programm herunter zu programmieren. Erst in diesem Schritt mache ich mir Gedanken zur Logik und wie ich die Teilprobleme lösen werde. 
+Im letzen Schritt beginne ich damit, das Programm herunter zu programmieren. Erst in diesem Schritt mache ich mir Gedanken zur Logik und wie ich die Teilprobleme lösen werde. 
