@@ -118,3 +118,6 @@ ___________________
 |      MyInt      |
 |_________________|
 ```
+
+# Umsetzung 
+Wir hatten mehrere [UMLs](./../resources/uml) bei denen wir die **alle** oben beschriebenen Lernziele anwenden mussten. Allerdings habe ich dies nicht am Computer gemacht sondern von Hand skitziert. Ausserdem kamm es bei mehreren Aufgaben vor, dass wir anhand eines UMLs eine Klassenstruktur erstellen mussten z. B. [Polymorphie](./../resources/polymorphie)
