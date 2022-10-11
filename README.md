@@ -25,6 +25,7 @@
 - [UML](./src/resources/uml/)
 - [Vererbung](./src/resources/vererbung/)
 - [Interfaces](./src/resources/interfaces/)
+- [Abstract](./src/resources/abstract/)
 
 # Schlusswort
 Ich denke, dass ich im Modul gut mitgekommen bin. Ich konnte all meine Vorerfahrung in Java gut festigen und neue Interesante Fakten dazulernen. Ausserdem habe ich das neue Thema UMLs kennengelernt, mit dem ich vorher nochnicht in Kontakt war. 
