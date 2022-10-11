@@ -221,6 +221,9 @@ public class Main{
 ### Zusammenfassung
 Dynamische und Statische Polymorphie unterscheidet sich darin, dass bei Statischer Polymorphie bereits bei Compilezeit feststeht welche Methode aufgerufen wird, wobei allerdings bei Dynamischer dies erst on runtime entschieden wird.
 
+### Umsetzung
+Ich habe das ganze an einem [Beispielprogramm](./../resources/polymorphie/) umgesetzt. bei habe ich Dynamische Polymorphie bei der  `.getPrice()` Methode verwendet. 
+
 ## D2E
 
 ### Abstrakte Klassen
