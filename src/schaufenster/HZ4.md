@@ -275,3 +275,29 @@ public class ElectroCar extends Fahrzeug{
     }
 }
 ```
+
+### Interfaces
+Manchmal kommt es auch vor, dass man gar keine Logik implementieren möchte. In diesen Fällen könnte man natürlich die gesammte Klasse theoretisch einfach Abstrakt machen. Man könnte allerdings auch zu einem Interface greifen. Alle Methoden in einem Interface sind von default `public` und `abstract`. Interfaces können in Java mit dem `interface` Keyword erstellt werden. Wie auch bei Klassen muss das File in dem das Interface ist gleich heissen und es kan auch nur maximal 1 Interface pro File exisitieren.
+
+```java
+//DummyInterface.java
+public interface DummyInterface{
+}
+```
+
+Wenn man nun ein Interface in einer anderen Klasse einbinden möhte kann man das `implemenets` keyword verwenden. In Java kann man "theoretisch" (Die Java VM hat immer irgendwo limits) viele Interfaces einbinden. Darin besteht auch ein Vorteil gegenüber von Klassen. Der Grund warum das möglich ist ganz einfach. Interfaces beinhalteten **nur** die Struktur und keine Logik. Dadurch muss der JavaCompiler nicht zwischen 2 verschiedenen Codeblöcken entscheiden. 
+
+```java
+public class Fahrzeug{
+    public void tanken();
+}
+
+public class Car implements Fahrzeug{
+    @Override
+    public void tanken(){
+        System.out.println("Tanke auf");
+    }
+}
+
+```
+
