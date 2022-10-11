@@ -6,6 +6,7 @@
 - [07.09.2022 Lernjournal](./src/07.09.2022/lernjournal.md)
 - [14.09.2022 Lernjournal](./src/14.09.2022/lernjournal.md)
 - [21.09.2022 Lernjournal](./src/21.09.2022/lernjournal.md)
+- [28.09.2022 Lernjournal](./src/28.09.2022/lernjournal.md)
 
 # Schaufenster 
 - [HZ1 (A)](./src/schaufenster/HZ1.md)
