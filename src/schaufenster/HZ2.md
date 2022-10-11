@@ -45,3 +45,55 @@ ___________________________________
 | `-` | `private` |
 | `#` | `package` |
 | `~` | package |
+
+
+## B1F
+In objektorientierte programmierung kommt es auch immer wieder vor, dass verschiedne Klassen Bezihungen untereinander eingehen. Natürlich müssen auch diese auf irgendeine Art und Weise im UML Diagram abgebildet werden. 
+### Assoziation
+Assoziation kommen immer dann vor, wenn eine Klasse ein anderes Objekt als Instanzvariable abspeichert. Es wird mit einem einfach durchgehender Pfeil zwischen 2 OBjekten gekennzeichnet. Am Ende des Pfeiles steht ein Wert, welcher angibt um wie viele Objekte es sich handelt. 
+```java
+public class MyClass{
+    private String s;
+}
+ ________________   ⇩ Anzahl
+ |  MyClass     |   1            ___________
+ |--------------| <--------------|  String  |
+ | -s : String  |                |__________|
+ |______________|
+
+````
+### Angabe der Anzahl
+Eine einfachen Assoziation (Verbindung) entsteht, wenn man z.B. bei der einen Klasse ein Attribut in Form von der anderen Klasse verwendet. Dabei gibt man bei einer Assoziation immer die Multiplizität an.
+- **Genau X**<br/>
+Um zu sagen, dass es sich genau um `X` Instanzen handelt, wird einfach die Zahl `X` zu der Verbindung dazugeschrieben. Ein Beispiel von einer solchen Verbindung wäre z.B.
+<br/>
+
+```java
+
+public class Main{
+    public final static Logger LOG = LoggerFactory.getLogger(Main.class);
+}
+```
+- **Von X zu Y** <br/>
+Um zu sagen, dass man eine variable Anzahl im Bereich von einer Range von Verbindungen hat, wird diese im Folgenden Syntax angegeben: `X..Y`. Ein Beispiel für eine solche Verbindung wäre
+<br/>
+
+```java
+public class Main{
+     private Ship ship = new Ship[5]; 
+    //Getter and Setter
+}
+``` 
+
+- **Beliebig**<br/>
+Natürlich kann es sich auch um eine unbegrenzte Anzahl von Verbindungen handeln. Dies wird dann mit Hilfe des `*` dargestellt. 
+<br/>
+
+```java
+public class Main{
+    private Set<Ship> ship = new LinkedHashSet<Ship>();
+    //Getter abd Setter
+}
+
+```
+
