@@ -30,41 +30,7 @@ print("Hello World")
 Beim OOP ist die Idee, dass man zuerst überlegt welche Funkionen und dadurch Klassen ein Programm haben soll. Anschlissend kann man damit beginnen diese Klassen zu erstellen und zu Implementieren. Eine Möglichkeit um die ganzen Klassen zu Planen sind sogennante UMLs, welche ich im HZ2 behandle. 
 
 ## A1F
-### Verbindungen zwischen den Klassen
-Eine einfachen Assoziation (Verbindung) entsteht, wenn man z.B. bei der einen Klasse ein Attribut in Form von der anderen Klasse verwendet. Dabei gibt man bei einer Assoziation immer die Multiplizität an.
-- **Genau X**<br/>
-Um zu sagen, dass es sich genau um `X` Instanzen handelt, wird einfach die Zahl `X` zu der Verbindung dazugeschrieben. Ein Beispiel von einer solchen Verbindung wäre z.B.
-<br/>
-
-```java
-
-public class Main{
-    public final static Logger LOG = LoggerFactory.getLogger(Main.class);
-}
-```
-- **Von X zu Y** <br/>
-Um zu sagen, dass man eine variable Anzahl im Bereich von einer Range von Verbindungen hat, wird diese im Folgenden Syntax angegeben: `X..Y`. Ein Beispiel für eine solche Verbindung wäre
-<br/>
-
-```java
-public class Main{
-     private Ship ship = new Ship[5]; 
-    //Getter and Setter
-}
-``` 
-
-- **Beliebig**<br/>
-Natürlich kann es sich auch um eine unbegrenzte Anzahl von Verbindungen handeln. Dies wird dann mit Hilfe des `*` dargestellt. 
-<br/>
-
-```java
-public class Main{
-    private Set<Ship> ship = new LinkedHashSet<Ship>();
-    //Getter abd Setter
-}
-
-```
-
+//TBD
 ## A1E
 ### Herangehensweise 
 Wenn man ein neuses Projekt bekommt kann der Erfolg des Projektes an der Herangehensweise liegen. Genau das selbe gilt auch bei einem Programm. Es ist wichtig, dass man eine Herangehensweise findet, die für einen Passt und mit der man arbeiten kann. Ich habe für mich selber folgende Herangehensweise gefunden.
