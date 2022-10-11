@@ -70,7 +70,7 @@ Nun kann man natürlich auch selber erstellte Klassen wiederverwenden. Wie auch 
 
 
 ## D1E 
-Wenn 2 Klassen untereinander eine Beziehung haben kommt es eigentlich immer vor, dass sie auch miteinander interagieren müssen. So kommt es z.B. vor, dass beim aufrufen einer Methode weitere Methoden von anderen Klassen aufgerufen werden. In diesem kleinen Beispiel haben wir 2 Klasse (`A` und `B`). Die beiden Klassen haben eine Beziehung untereinander, die daraus besteht, dass die Klasse ein KLassenatribut von `B` hat. Wenn wir nun an der Klasse `A` die Methode `.doSomething()` aufrufen wird an dem Klassenattribut `b` auch gleich die Methode `.otherMethod()` aufgerufen. Dadurch interagiert die Klasse `A` mit der Klasse `B`  
+Wenn 2 Klassen untereinander eine Beziehung haben, kommt es eigentlich immer vor, dass sie auch miteinander interagieren müssen. So kommt es z.B. vor, dass beim Aufrufen einer Methode weitere Methoden von anderen Klassen aufgerufen werden. In diesem kleinen Beispiel haben wir 2 Klassen (`A` und `B`). Die beiden Klassen haben eine Beziehung untereinander, die daraus besteht, dass die Klasse `A` ein Klassenattribut von `B` hat. Wenn wir nun an der Klasse `A` die Methode `.doSomething()` aufrufen, wird am Klassenattribut `b` auch gleich die Methode `.otherMethod()` aufgerufen. Dadurch interagiert die Klasse `A` mit der Klasse `B`  
 
 ```java
 public class A{
@@ -89,18 +89,18 @@ public class B{
 
 ```
 ### Kapselung
-In Java kann man die Verwendung von Methoden, Konstruktoren oder auch Attributen in anderen Klassen einschränken oder gänzlich verbieten. In Java gibt es 4 verschiedene Accessmodefiere, die man alle auswendig kennen sollte. Am häufigsten wird aber definitif Private und Public verwendet. 
+In Java kann man die Verwendung von Methoden, Konstruktoren oder auch Attributen in anderen Klassen einschränken oder gänzlich verbieten. In Java gibt es 4 verschiedene Accessmodefier, die man alle auswendig kennen sollte. Am häufigsten wird aber definitif Private und Public verwendet. 
 
 
-| Modefiere | Beschreibung |
+| Modifier | Beschreibung |
 |---|---|
-| Public | Öffentlich bedeutet, dass die Objekt für alle Klassen in egal welchem Package verfügbar sind. Er ist auch der Access Modefiere, der die Verwendung nicht einschränkt <br/> _Er wird mit dem `public` keyword deklariert_ |
-| Private | Private bedeutet, dass das Objekt nur aus der eigenen Klasse heraus erreichbar ist. Er ist also quasi genau das gegenteil von Public. <br/> _Er wird mit dem `private` keyword deklariert_ |
-| Protected  | Mit Protected wird ein Objekt nur aus allen Klassen aus dem gleichen Package und Klassen welche das besagte Objekt implementieren her erreichbar. <br/> _Er wird mit dem `protected` keyword deklariert_ |
-| Package | Package bedeutet, dass das Objekt **nur** aus dem gleichen Package heraus erreichbar ist.  <br/> _Er muss nicht mit einem Keyword deklariert werden alle Methoden/Konstruktoren und Attribute in Klassen sind von default her Package_ |
+| Public | Öffentlich bedeutet, dass die Objekte für alle Klassen in egal welchem Package verfügbar sind. Es ist auch der Access Modifier, der die Verwendung vom Objekt nicht einschränkt. <br/> _Der Access Modifier wird mit dem `public` keyword deklariert_ |
+| Private | Privat bedeutet, dass das Objekt nur aus der eigenen Klasse heraus erreichbar ist. Private ist also quasi genau das Gegenteil von Public. <br/> _Der Access Modifier wird mit dem `private` keyword deklariert_ |
+| Protected  | Mit Protected wird ein Objekt nur aus allen Klassen aus dem gleichen Package und Klassen, welche das besagte Objekt implementieren erreichbar. <br/> _Der Access Modifier wird mit dem `protected` keyword deklariert_ |
+| Package | Package bedeutet, dass das Objekt **nur** aus dem gleichen Package heraus erreichbar ist.  <br/> _Der Access Modifier muss nicht mit einem Keyword deklariert werden. Alle Methoden/Konstruktoren und Attribute in Klassen sind von default her Package_ |
 
 ### Getter und Setter
-Eine Folge von Kapselung in Java sind sogennante Getter und Setter. In Java gilt es grundsätlich als good Practise wenn man **NIEMALS** direckt auf Attribute in Klasse zugreift. Das hat den Simplen Grund, dass man dadurh validieren kann ob ein eingegeben Wert valid ist. In diesem Beispiel z.B. haben wir eine Klasse `Player` mit einem Attribut `health`. Nun wollen wir sicher stellen, dass `health` niemals unter 0 ist. Wenn `health` public währe könnte man mit `player.health = -1;` ganz einfach das Attribut `health` negatif setzen. In diesem Beispiel allerdings haben wir eine setter Methode, in der wir Validieren, ob `health` auch wirklich einen valider Wert ist.
+Eine Folge von Kapselung in Java sind sogennante Getter und Setter. In Java gilt es grundsätzlich als good Practise, wenn man **NIEMALS** direkt auf Attribute in Klassen zugreift. Das hat den simplen Grund, dass man dadurch validieren kann, ob ein eingegebener Wert valide ist. In diesem Beispiel haben wir eine Klasse `Player` mit einem Attribut `health`. Nun wollen wir sicher stellen, dass `health` niemals unter 0 ist. Wenn `health` public wäre, könnte man mit `player.health = -1;` ganz einfach das Attribut `health` negatif setzen. In diesem Beispiel allerdings haben wir eine setter Methode, in der wir validieren, ob `health` auch wirklich einen valider Wert ist.
 
 
 ```java
@@ -122,7 +122,7 @@ public class Player{
 ```
 
 ## D2G
-Im Programmieren sollte man Redundanter Code möglichst verhindern, da dieser aufwändig zum Warten ist und man auch im Falle, dass man etwas anpassen möchte dieses imemr an mehreren Stellen machen muss. Es kann vorkommen, dass man mehrere Klassen haben, die Methoden haben, welche in der Logik gleich sind. Ein Beispiel dafür währen die beiden Klassen `Car` und `Truck`.  Beide klassen haben in diesem Fall eine Methode `.starten()` oder auch eine Methode `.tanken()`. Nun könnte man natürlich 2 Verschiedene Klassen machen und 2 mal die Methode implementieren.
+Im Programmieren sollte man redundanten Code möglichst verhindern, da dieser aufwändig in der Wartungsarbeit ist und man auch im Falle, dass man etwas anpassen möchte, dies imemr an mehreren Stellen machen muss. Es kann vorkommen, dass man mehrere Klassen hat, die Methoden haben, welche in der Logik gleich sind. Ein Beispiel dafür wären die beiden Klassen `Car` und `Truck`.  Beide klassen haben in diesem Fall eine Methode `.starten()` oder auch eine Methode `.tanken()`. Nun könnte man natürlich 2 Verschiedene Klassen machen und 2 Mal die Methode implementieren.
 
 ```java
 public class Car{
@@ -138,7 +138,7 @@ public class Truck{
 }
 
 ```
-In dem Beispiel oben ist es kein Aufwand 2 mal die Methode `.tanken()` zu schreiben. Nun könnte es aber auch sein dass noch eine weitere Klasse `PKW` hinzukommt oder dass die Methode `.tanken()` nichtmehr benötigt wird. Nun währe es natürlich praktisch wenn es eine Möglichkeit gäbe diese Methode nur einmal implementieren zu müssen. Dadurch könnte man leicht neue Klassen hinzufügen oder auch die Methode löschen falls sie nichtmehr benötigt werden würde. In diesem Moment kommt Vererbung ins Spiel. In Java kann man Klassen vererben. Dadurch sind alle Methoden und Attribute von der Parentklasse auch autmatisch in der Childklasse implementiert. In Java kann man eine Klasse in eine andere mit dem `extends` Keyword implementieren.
+Im Beispiel oben ist es kein Aufwand 2 Mal die Methode `.tanken()` zu schreiben. Nun könnte es aber auch sein, dass noch eine weitere Klasse `PKW` hinzukommt oder dass die Methode `.tanken()` nicht mehr benötigt wird. Nun wäre es natürlich praktisch, wenn es eine Möglichkeit gäbe, diese Methode nur einmal implementieren zu müssen. Dadurch könnte man leicht neue Klassen hinzufügen oder auch die Methode löschen, falls sie nicht mehr benötigt werden würde. In diesem Moment kommt Vererbung ins Spiel. In Java kann man Klassen vererben. Dadurch sind alle Methoden und Attribute von der Parentklasse auch automatisch in der Childklasse implementiert. In Java kann man eine Klasse in eine andere mit dem `extends` Keyword implementieren.
 
 ```java
 public class Fahrzeug(){
@@ -153,7 +153,7 @@ public class Truck extends Fahrzeug{}
 
 ```
 ### Implementieren von mehreren Klassen
-In Java kann man **nicht** mehrere Klassen in einer Klasse vererben. Das liegt simpel daran, dass für den Fall, dass die beiden Klassen gleiche Methoden enthalten der Compiler nicht entscheiden kann welche er verwenden sollte. 
+In Java kann man **nicht** mehrere Klassen in eine Klasse vererben. Das liegt simpel daran, dass für den Fall, dass die beiden Klassen gleiche Methoden enthalten, der Compiler nicht entscheiden kann, welche er verwenden sollte. 
 
 ```java
 
@@ -178,13 +178,13 @@ public class Main{
 }
 
 ```
-In anderen Programmiersprachen wie `C++` oder auch `Python` ist es möglich mehrere Klassen zu vererben. ALlerdings habe ich es auch noch in keiner von denen Programmiersprachen gebraucht.
+In anderen Programmiersprachen wie `C++` oder auch `Python` ist es möglich, mehrere Klassen zu vererben. Allerdings habe ich es auch noch nie in einer Programmiersprache gebraucht.
 
 ## D2F
 
 Im Objekt Orientierten Programmieren unterscheidet mann zwischen `Dynamischer Polymorphie` und `Statischer Polymorphie`. 
 - **Statische Polymorphie** <br/>
-Bei Sttaischer Polymorphie werden Methoden oder auch Konstruktoren überladen. Dabei hat man mehrere Funktionen mit dem gleichen namen. Sie unterscheiden sich nur darin, dass sie unterschiedliche Parameter haben. Welche Methode am Ende aufgerufen wird entscheidet sich lediglich daran, welche Parameter mitgegeben werden.  
+Bei Statischer Polymorphie werden Methoden oder auch Konstruktoren überladen. Dabei hat man mehrere Funktionen mit dem gleichen Namen. Sie unterscheiden sich nur darin, dass sie unterschiedliche Parameter haben. Welche Methode am Ende aufgerufen wird, entscheidet sich lediglich daran, welche Parameter mitgegeben werden.  
 
 ```java
 public class StaticPolymorphie{
@@ -193,7 +193,7 @@ public class StaticPolymorphie{
 }
 ```
 - **Dynamische Polymorphie**<br/>
-Bei Dymaischer Polymorphie werden gleiche Methoden mit gleichen Parameter mehrmals implementiert. Das ist natürlich nur möglich wenn Vererbung vorhanden ist. Welche Methode am Ende aufgerufen wird entscheidet sich dann daran, an welchem Objekt sie aufgerufen wird.
+Bei Dymaischer Polymorphie werden gleiche Methoden mit gleichen Parameter mehrmals implementiert. Das ist natürlich nur möglich wenn Vererbung vorhanden ist. Welche Methode am Ende aufgerufen wird, entscheidet sich dann daran, an welchem Objekt sie aufgerufen wird.
 
 ```java
 
@@ -219,13 +219,13 @@ public class Main{
 }
 ```
 ### Zusammenfassung
-Dynamische und Statische Polymorphie unterscheidet sich darin, dass bei Statischer Polymorphie bereits bei Compilezeit feststeht welche Methode aufgerufen wird wobei allerdings bei Dynamischer dies erst on runtime entschcieden wird.
+Dynamische und Statische Polymorphie unterscheidet sich darin, dass bei Statischer Polymorphie bereits bei Compilezeit feststeht welche Methode aufgerufen wird, wobei allerdings bei Dynamischer dies erst on runtime entschieden wird.
 
 ## D2E
 
 ### Abstrakte Klassen
-Wie bereits im Kapitel D2G beschrieben geht es immer darum, möglichst erweiterbaren und gut wartbaren Code zu schreiben. Aus diesem Grund gibt es vererbung zwischen Klassen. Wie bereits berschrieben kann man dadurch ganz einfach die Logik und die Struktur von einer Klasse in mehreren Weiterverwenden. Nun gibt es aber auch Szenarien wo wir nur die Struktur übernehnen möchten.
-Um einmal auf das Beispiel mit der Methode `.tanken()` zurückzukehren könnte man nun 2 Klassen `Car` und `ElectroCar` implementieren wollen. Schnell sollte auffallen, dass man logischerweise ein Elektorauto anderst betankt als ein Konventionelles Auto. Nun könnte man natürlich dahherkommen und wieder 2 Verschiedene Klassen implementieren die nichts miteinander zu tun haben.
+Wie bereits im Kapitel D2G beschrieben geht es immer darum, möglichst erweiterbaren und gut wartbaren Code zu schreiben. Aus diesem Grund gibt es Vererbung zwischen Klassen. Wie bereits beschrieben, kann man dadurch ganz einfach die Logik und die Struktur von einer Klasse in mehreren Klassen Weiterverwenden. Nun gibt es aber auch Szenarien, bei denen wir nur die Struktur übernehmen möchten.
+Um einmal auf das Beispiel mit der Methode `.tanken()` zurückzukehren, könnte man nun 2 Klassen `Car` und `ElectroCar` implementieren wollen. Schnell sollte auffallen, dass man logischerweise ein Elektorauto anders betankt als ein konventionelles Auto. Nun könnte man natürlich wieder 2 verschiedene Klassen implementieren, die nichts miteinander zu tun haben.
 ```java
 
 public class Car{
@@ -249,8 +249,8 @@ public class ElectroCar{
 }
 
 ```
-Der Code würde theoretisch funktionieren allerdings ist er weder gut wartbar noch skalierbar. Zudem fällt auf, dass beide Klassen eine Methode `.hupen()` haben. Diese verändert sich von der Logik her nicht und bleibt in beiden KLassen gleich. Auch hier währe es praktisch eine Möglichkeit zu haben diese weiterzuverwenden. 
-Die lösung dafür sind Abstrakte Klassen. Abstrakte Klassen können mit dem `abstract` Keyword erstellt werden. Sie zeichnen sich dadurch aus, dass sie nicht inizalisiert werden können und das eine Methode in ihr auch Abstrakt gesetzt werden kann. Abstrakte Methoden haben keinen Body und dadurch auch keine Logik. Das Implementieren der Logik ist dann sache von der nächsten Childklasse welche **nicht** abstrakt ist. 
+Der Code würde theoretisch funktionieren, allerdings ist er weder gut wartbar, noch skalierbar. Zudem fällt auf, dass beide Klassen eine Methode `.hupen()` haben. Diese verändert sich von der Logik her nicht und bleibt in beiden Klassen gleich. Auch hier wäre es praktisch eine Möglichkeit zu haben, diese weiterzuverwenden. 
+Die lösung dafür sind Abstrakte Klassen. Abstrakte Klassen können mit dem `abstract` Keyword erstellt werden. Sie zeichnen sich dadurch aus, dass sie nicht initalisiert werden können, und dass eine Methode in ihr auch Abstrakt gesetzt werden kann. Abstrakte Methoden haben keinen Body und dadurch auch keine Logik. Das Implementieren der Logik ist dann Sache der nächsten Childklasse, welche **nicht** abstrakt ist. 
 
 ```java
 public abstract class Fahrzeug{
@@ -277,7 +277,7 @@ public class ElectroCar extends Fahrzeug{
 ```
 
 ### Interfaces
-Manchmal kommt es auch vor, dass man gar keine Logik implementieren möchte. In diesen Fällen könnte man natürlich die gesammte Klasse theoretisch einfach Abstrakt machen. Man könnte allerdings auch zu einem Interface greifen. Alle Methoden in einem Interface sind von default `public` und `abstract`. Interfaces können in Java mit dem `interface` Keyword erstellt werden. Wie auch bei Klassen muss das File in dem das Interface ist gleich heissen und es kan auch nur maximal 1 Interface pro File exisitieren.
+Manchmal kommt es auch vor, dass man gar keine Logik implementieren möchte. In diesen Fällen könnte man natürlich die gesamte Klasse theoretisch einfach Abstrakt machen. Man könnte allerdings auch zu einem Interface greifen. Alle Methoden in einem Interface sind von default `public` und `abstract`. Interfaces können in Java mit dem `interface` Keyword erstellt werden. Wie auch bei Klassen muss das File in dem das Interface ist gleich heissen und es kann auch nur maximal 1 Interface pro File exisitieren.
 
 ```java
 //DummyInterface.java
@@ -285,7 +285,7 @@ public interface DummyInterface{
 }
 ```
 
-Wenn man nun ein Interface in einer anderen Klasse einbinden möhte kann man das `implemenets` keyword verwenden. In Java kann man "theoretisch" (Die Java VM hat immer irgendwo limits) viele Interfaces einbinden. Darin besteht auch ein Vorteil gegenüber von Klassen. Der Grund warum das möglich ist ganz einfach. Interfaces beinhalteten **nur** die Struktur und keine Logik. Dadurch muss der JavaCompiler nicht zwischen 2 verschiedenen Codeblöcken entscheiden. 
+Wenn man nun ein Interface in einer anderen Klasse einbinden möchte, kann man das `implements` keyword verwenden. In Java kann man "theoretisch" (die Java VM hat immer irgendwo Limiten) viele Interfaces einbinden. Darin besteht auch ein Vorteil gegenüber von Klassen. Der Grund warum das möglich ist, ist ganz einfach. Interfaces beinhalteten **nur** die Struktur und keine Logik. Dadurch muss der JavaCompiler nicht zwischen 2 verschiedenen Codeblöcken entscheiden. 
 
 ```java
 public class Fahrzeug{
@@ -302,8 +302,8 @@ public class Car implements Fahrzeug{
 ```
 
 ### Beispiele von Interfaces
-In Java gibt es ein Interface `java.util.List`. Dies ist ein Interface, welches die gesamte Struktur für eine Liste Implementiert. Z.b gibt es eine Methode `.add(Object)` mit dessen Hilfe man ein Objekt an der Liste anfügen kann. Nun gibt es allerdings mehrere Möglichkeiten wie man eine Liste implementieren kann. Zum einen gibt es da die `ArrayList` welche kurz gesagt einfach ein normaler JavaArray ist. Die andere Möglichkeit ist eine `LinkedList`. Bei ihr hat jedes element in der Liste 2 Pointer. Einen davon zeigt auf das Element davor, der andere auf das nächste Element in der Liste. 
-Nun könnte es natürlich vorkommen, dass man sich während dem entwicklen dazu entscheided, dass doch eine `LinkedList` sinvoller währe als eine `ArrayList`. Wenn man nun eine `List` als Datentyp gewählt hat kann man das ganz einfach und schnell austauschen.
+In Java gibt es ein Interface `java.util.List`. Dies ist ein Interface, welches die gesamte Struktur für eine Liste Implementiert. Z.b gibt es eine Methode `.add(Object)` mit dessen Hilfe man ein Objekt an der Liste anfügen kann. Nun gibt es allerdings mehrere Möglichkeiten, wie man eine Liste implementieren kann. Zum einen gibt es da die `ArrayList`, welche kurz gesagt einfach ein normaler JavaArray ist. Die andere Möglichkeit ist eine `LinkedList`. Bei ihr hat jedes Element in der Liste 2 Pointer. Einer davon zeigt auf das Element davor, der andere auf das nächste Element in der Liste. 
+Nun könnte es natürlich vorkommen, dass man sich während dem Entwicklen dazu entscheidet, dass doch eine `LinkedList` sinvoller wäre als eine `ArrayList`. Wenn man nun eine `List` als Datentyp gewählt hat, kann man das ganz einfach und schnell austauschen.
 
 ```java
 public class Main{
