@@ -80,7 +80,7 @@ Um zu sagen, dass man eine variable Anzahl im Bereich von einer Range von Verbin
 
 ```java
 public class Main{
-     private Ship ship = new Ship[5]; 
+     private Ship[] ship = new Ship[5]; 
     //Getter and Setter
 }
 ``` 
