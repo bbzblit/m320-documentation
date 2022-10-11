@@ -13,7 +13,6 @@
 - [HZ2 (B)](./src/schaufenster/HZ2.md)
 - [HZ2 (C)](./src/schaufenster/HZ3.md)
 - [HZ3 (D)](./src/schaufenster/HZ4.md)
-- [HZ4 (E)](./src/schaufenster/HZ5.md)
  
 # Resource 
 - [ArrayList](./src/resources/arraylist/)
