@@ -3,6 +3,9 @@
 # Schaufenster HZ2
 
 ## B1G
+
+UML (Unified Modeling Language) kann dazu verwendet werden, um die Strukturen von Klassen und deren Beziehungen untereinander in ein Diagramm zu fassen. Dabei wird in einem UML Diagram die komplete Struktur eines Programmes abgebildet nicht aber seine Logik.
+
 ### Aufbau eines Klassendiagramms
 Ein Klassendiagramm besteht aus mehreren Klassen mit Beziehungen untereinander. Jede einzelne Karte bildet eine einzelne Klasse dar. Dabei zeigt es an, welche Methoden, Attrbute und Konstruktoren die Klasse besitzt. Der Aufbau sollte relativ selbsterklärend anhand des unteren Beispieles sein. Acces Modefier können entweder `+` für `public` oder `-` für `private` sein. Ausserdem kann der Rückgabewert auch weggelassen werden, falls es sch dabei um `void` handelt. 
 ```java
@@ -34,3 +37,11 @@ ___________________________________
 |_________________________________|
 ```
 
+**Liste der Modefier:**
+
+| Char | Modefier |
+|---|---|
+| `+` | `public` |
+| `-` | `private` |
+| `#` | `package` |
+| `~` | package |
