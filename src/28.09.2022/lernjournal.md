@@ -1,3 +1,5 @@
+[Back to main Page](./../../README.md)
+
 # Lernjournal
 
 ## Was habe ich gemacht?
