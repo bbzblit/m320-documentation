@@ -25,4 +25,4 @@
 - [Polymorphie](./src/resources/polymorphie/)
 - [UML](./src/resources/uml/)
 - [Vererbung](./src/resources/vererbung/)
-- [interfaces](./src/resources/interfaces/)
+- [Interfaces](./src/resources/interfaces/)
