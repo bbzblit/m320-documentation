@@ -64,3 +64,13 @@ public class Main{
 }
 
 ```
+
+## A1E
+### Herangehensweise 
+Wenn man ein neuses Projekt bekommt kann der Erfolg des Projektes an der Herangehensweise liegen. Genau das selbe gilt auch bei einem Programm. Es ist wichtig, dass man eine Herangehensweise findet, die für einen Passt und mit der man arbeiten kann. Ich habe für mich selber folgende Herangehensweise gefunden.
+1. **Problem Analysieren und in Teilprobme zerlegen** <br/>
+Als erstes lese ich mir die genaue Anforderung an das Programm durch. Danach versuche ich das grosse Problem in mehrere kleine Teilprobleme zu zerlegen. Dadurch ist es einfacher diese zu lösen und schlussendlich in Code zu fassen. Manchmal kann ich auch Teilprobleme mehrmals wiederverwenden woduch ich unnötige Redundanz verliere. Um das ganze anhand eines Beispieles genauer zu Verdeutlichen kann man die Aufgabe Pizza Backen nehmen. Ein Teilproblem währe in diesem Fall dann Teig machen oder auch Ofen einstellen usw.
+2. **PseudoCode/UML** <br/>
+Je nach grösse des Programmes beginne ich im nächsten Schrit damit, ein UML zu erstellen oder auch das ganze einmal in Pseudocode aufzuschreiben. In diesem Schritt defeniere ich dann auch zwingend wie die einzelnen Klassen miteinander zusammenspel oder wie die Vererbungshirarchie aussieht. 
+3. **Coden**
+Im letzen Schritt beginne ich damit, dass Programm herunter zu programmieren. Erst in diesem Schritt mache ich mir Gedanken zur Logik und wie ich die Teilprobleme lösen werde. 
