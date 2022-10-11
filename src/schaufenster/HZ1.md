@@ -30,7 +30,10 @@ print("Hello World")
 Beim OOP ist die Idee, dass man zuerst überlegt welche Funkionen und dadurch Klassen ein Programm haben soll. Anschlissend kann man damit beginnen diese Klassen zu erstellen und zu Implementieren. Eine Möglichkeit um die ganzen Klassen zu Planen sind sogennante UMLs, welche ich im HZ2 behandle. 
 
 ## A1F
-//TBD
+
+Im OOP Kontext kommt es immer wieder vor, dass einzelne Klassen miteinander Interagieren. Wie bereits beschrieben ist eine Klasse immer für ein einzelnes Teilproblem zuständig. Dadurch sollte es schon nach dem zerlegen des Problemes in mehrere Teilprobleme klar sein, wie die Klassen untereinander interagieren müssen. Es kann sehr hilfreich sein, wenn man das ganze in einem UML Diagram darstellt, damit mann nicht die Übersicht über alle Klassen verliert.
+
+
 ## A1E
 ### Herangehensweise 
 Wenn man ein neuses Projekt bekommt kann der Erfolg des Projektes an der Herangehensweise liegen. Genau das selbe gilt auch bei einem Programm. Es ist wichtig, dass man eine Herangehensweise findet, die für einen Passt und mit der man arbeiten kann. Ich habe für mich selber folgende Herangehensweise gefunden.
