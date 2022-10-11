@@ -97,7 +97,7 @@ public class Main{
 
 ```
 
-### `<<use>>` Bezihung
+### <<use>>` Bezihung
 Sehr häuffig kommt es auch vor, dass eine Klasse zwar ein Objekt in einer Methode verwendet allerdings es nie als Instanzvariable abspeichert. Falls das vorkommt kann das in einem UML Diagram mit `<<use>>` dargestellt werden.
 
 ```java
@@ -107,6 +107,5 @@ public class DummyCass{
     }
 } 
 ```
-                              
-                              
-    
+
+## B1E
