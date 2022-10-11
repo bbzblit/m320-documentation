@@ -28,6 +28,6 @@
 - [Abstract](./src/resources/abstract/)
 
 # Schlusswort
-Ich denke, dass ich im Modul gut mitgekommen bin. Ich konnte all meine Vorerfahrung in Java gut festigen und neue Interesante Fakten dazulernen. Ausserdem habe ich das neue Thema UMLs kennengelernt, mit dem ich vorher nochnicht in Kontakt war. 
+Ich denke, dass ich im Modul gut mitgekommen bin. Ich konnte meine ganze Vorerfahrung in Java gut festigen und neue interesante Fakten dazulernen. Ausserdem habe ich das neue Thema UMLs kennengelernt, mit dem ich vorher noch nicht in Kontakt war. 
 <br/>
-Ich fand das schreiben eines Lernjournales auch Praktisch. Damit konnte ich mich noch einmal darüber versichern, dass ich wirklich alles korrekt verstanden habe.
+Ich fand das Schreiben eines Lernjournales auch praktisch und lehrich. Damit konnte ich mich noch einmal darüber versichern, dass ich wirklich alles korrekt verstanden habe.
