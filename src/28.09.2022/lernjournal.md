@@ -22,3 +22,9 @@ public class Sword implements Waffe{
 }
 
 ```
+
+## Reflexion
+Ich denke, dass ich in der letzen Woche gut vorrangekommen bin. Ich konnte alle Aufgaben lösen. Ausserdem habe ich schon einmal eine erste Rückmeldung bezüglich meines Lernjournales erhalten. 
+
+## Ziele
+Meine Ziele sind es, alle Kompetenzen im Schaufenster sauber zu erstellen. Ausserdem möchte ich die Vorschläge bezüglich des Lernjournales umsetzen.
