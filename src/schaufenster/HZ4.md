@@ -121,6 +121,10 @@ public class Player{
 }
 ```
 
+
+### Umsetzung
+Ich habe das ganze anhand eines [Games](./../resources/mandi/) umgesetzt. Dabei hat man 2 Klassen (`Character` und `Fight`). Die Fight klasse Interagiert mit der Characer Klasse indem sie 2 Character immer gegeneinander kämpfen läst.
+
 ## D2G
 Im Programmieren sollte man redundanten Code möglichst verhindern, da dieser aufwändig in der Wartungsarbeit ist und man auch im Falle, dass man etwas anpassen möchte, dies imemr an mehreren Stellen machen muss. Es kann vorkommen, dass man mehrere Klassen hat, die Methoden haben, welche in der Logik gleich sind. Ein Beispiel dafür wären die beiden Klassen `Car` und `Truck`.  Beide klassen haben in diesem Fall eine Methode `.starten()` oder auch eine Methode `.tanken()`. Nun könnte man natürlich 2 Verschiedene Klassen machen und 2 Mal die Methode implementieren.
 
@@ -152,6 +156,8 @@ public class Car extends Fahrzeug{}
 public class Truck extends Fahrzeug{}
 
 ```
+
+
 ### Implementieren von mehreren Klassen
 In Java kann man **nicht** mehrere Klassen in eine Klasse vererben. Das liegt simpel daran, dass für den Fall, dass die beiden Klassen gleiche Methoden enthalten, der Compiler nicht entscheiden kann, welche er verwenden sollte. 
 
@@ -179,6 +185,9 @@ public class Main{
 
 ```
 In anderen Programmiersprachen wie `C++` oder auch `Python` ist es möglich, mehrere Klassen zu vererben. Allerdings habe ich es auch noch nie in einer Programmiersprache gebraucht.
+
+### Umsetzung
+Ich habe das ganze an einem [Beispielprojekt](./../resources/vererbung/) umgesetzt bei dem es darum geht verschiedene Autos zu verwalten. Es gibt eine Oberklasse `Car` und mehrere ChildKlassen wie `UsedCar` usw.
 
 ## D2F
 
