@@ -10,7 +10,11 @@ Das Prinzip von automatisch generierten Dokumentationen hat nicht nur Java erfol
 
 ## C1F Javadoc mit Hilfe von einfachen Kommentaren erstellen <br/>
 Ein Javadoc Kommentar ist ein Kommentar, der immer direkt über einer Klasse, Methode oder auch Konstruktor steht und mit `/**` beginnt. Den JavaDoc Kommentar kann man schnell einmal mit einem normalen mehrzeiligen Kommentar verwechseln. Allerdings besteht der Unterschied darin, dass der JavaDoc Kommentar mit 2 Sternen anfängt (`/*` = Normaler mehrzeiliger Kommentar **/** `/**` = Javadoc Kommentar). Im JavaDoc Kommentar kann man anschliessend eine kurze Beschreibung zu der Methode oder auch Klasse machen. Um bestimmte Bereiche in der Beschreibung hervorzuheben, kann man auch `HTML`  Tags verwenden. <br/>
-Ich habe das Ganze auch anhand eines [Beispiel-Projektes](./../07.09.2022/resources/javdoc/dev/bbzbl/m320/package-summary.html) umgesetzt. Dazu habe ich über alle Klassen, Methoden und Konstruktoren einen Javadoc Kommentar geschrieben.
+
+### Umsetzung
+
+Ich habe das Ganze auch anhand eines [Beispiel-Projektes](./../resources/javdoc/javdoc/dev/bbzbl/m320/package-summary.html) umgesetzt. Dazu habe ich über alle Klassen, Methoden und Konstruktoren einen Javadoc Kommentar geschrieben.
+
 ```java
 /**
  * 
@@ -20,7 +24,8 @@ Ich habe das Ganze auch anhand eines [Beispiel-Projektes](./../07.09.2022/resour
 public class Ship {
 }
 ```
-Nun konnte ich in Eclipse über `Project` > `Generate Java Doc` die Javadoc für das Projekt generieren. Diese musste ich dann nur noch auf einen Webserver laden und fertig war die [Documentation](./../07.09.2022/resources/javdoc/dev/bbzbl/m320/package-summary.html) . 
+Nun konnte ich in Eclipse über `Project` > `Generate Java Doc` die Javadoc für das Projekt generieren. Diese musste ich dann nur noch auf einen Webserver laden und fertig war die [Documentation](./../resources/javadoc/javdoc/dev/bbzbl/m320/package-summary.html) . 
+
 ## C1E Implementieren von JavaDoc anhand der wichtigsten Tags
 Wenn man sich einmal die JavaDoc für die [`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) Klasse etwas genauer anschaut, fällt einem schnell auf, dass gewisse Bereiche etwas hervorgehoben sind. Ein Beipiel dafür ist ein Berreich, in dem man Methoden und Klassen sieht, die etwas mit `String` zu tun haben (See Also). Natürlich könnte man das ganze mit HTML Tags formatieren. Das ganze wäre allerdings extrem aufwändig und auch redundante Arbeit. Aus diesem Grund gibt es in JavaDoc sogennante Tags, die sehr an Java Annotationen erinnern. Ein Tag beginnt immer mit einem `@` Zeichen, gefolgt von dem Tagname im Falle von Verweise wäre das z.B. `@see`. Alles was nachher an Text kommt, wird speziell in der JavaDoc angezeigt. Es gibt eine grosse Anzahl an JavaDoc Tags, die man auch nicht alle auswendig kennen muss. Allerdings hat es Vorteile, wenn man die Wichtigsten kennt.
 
@@ -57,6 +62,6 @@ public class Ship {
 | `{@link }` | Funktionert gleich wie der `@see` Tag |
 | `{@code }` | Formatiert den Block anders, um ihn hervorzuheben |
 
-### Meine Umsetzung
+### Umsetzung
 
-Ich habe das ganze natürlich auch einmal anhand eines kleinen Testprojektes umgesetzt. Dazu habe ich die bereits bestehende [`Documentation`](./../07.09.2022/resources/index.md#wichtigste-klassen) mit den nötigen Tags versehen. 
+Ich habe das ganze natürlich auch einmal anhand eines kleinen Testprojektes umgesetzt. Dazu habe ich die bereits bestehende [`Documentation`](./../resources/javadoc/index.md#wichtigste-klassen) mit den nötigen Tags versehen. 
