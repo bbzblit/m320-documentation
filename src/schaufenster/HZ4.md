@@ -276,6 +276,9 @@ public class ElectroCar extends Fahrzeug{
 }
 ```
 
+### Umsetzung
+Ich hab das ganze dadurch umgesetzt, dass ich in einer Gruppe das bestehende Game so angepasst habe, dass neu die Klasse [Car](./../resources/abstract/index.md#umsetzung) abstrakt ist. Ausserdem haben wir die Methode `.getPrice()` abstract gesetzt, da sich diese bei einem CrashedCar anderst berechnet als bin einem UsedCar.
+
 ### Interfaces
 Manchmal kommt es auch vor, dass man gar keine Logik implementieren möchte. In diesen Fällen könnte man natürlich die gesamte Klasse theoretisch einfach Abstrakt machen. Man könnte allerdings auch zu einem Interface greifen. Alle Methoden in einem Interface sind von default `public` und `abstract`. Interfaces können in Java mit dem `interface` Keyword erstellt werden. Wie auch bei Klassen muss das File in dem das Interface ist gleich heissen und es kann auch nur maximal 1 Interface pro File exisitieren.
 
@@ -313,4 +316,4 @@ public class Main{
 }
 ```
 ### Umsetzung
-Ich habe das ganze zusammen in einem Team umgesetzt. Wir haben das bereits bestehende [`Game`](./../resources/interfaces/index.md#wichtigste-klasse) so angepasst, das es nun Interface `Waffen` gibt. Dieses definiert wie eine Waffe aufgebaut ist. Nun kann man mehrere Childklassen erstellen, bei denenen jede Childklasse eine eigene Waffe implementiert z.B. Schwert usw.
+Ich habe das ganze zusammen in einem Team umgesetzt. Wir haben das bereits bestehende [Game](./../resources/interfaces/index.md#wichtigste-klasse) so angepasst, das es nun Interface `Waffen` gibt. Dieses definiert wie eine Waffe aufgebaut ist. Nun kann man mehrere Childklassen erstellen, bei denenen jede Childklasse eine eigene Waffe implementiert z.B. Schwert usw.
