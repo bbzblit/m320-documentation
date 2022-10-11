@@ -312,3 +312,5 @@ public class Main{
     }
 }
 ```
+### Umsetzung
+Ich habe das ganze zusammen in einem Team umgesetzt. Wir haben das bereits bestehende [`Game`](./../resources/interfaces/index.md#wichtigste-klasse) so angepasst, das es nun Interface `Waffen` gibt. Dieses definiert wie eine Waffe aufgebaut ist. Nun kann man mehrere Childklassen erstellen, bei denenen jede Childklasse eine eigene Waffe implementiert z.B. Schwert usw.
