@@ -45,4 +45,4 @@ Je nach Grösse des Programmes beginne ich im nächsten Schritt damit, ein UML z
 Im letzen Schritt beginne ich damit, das Programm herunter zu programmieren. Erst in diesem Schritt mache ich mir Gedanken zur Logik und wie ich die Teilprobleme lösen werde. 
 
 # Umsetzung
-Ich habe versucht die Oben beschriebenen Methoden in all meinen Projekten anzuwenden. Teilweise hatte ich damit erfolg. Es kamm aber auch immer wieder vor, dass ich die ersten schritte übersprungen habe und direckt mit dem Coden angefangen habe. 
+Ich habe versucht die Oben beschriebenen Methoden in all meinen Projekten anzuwenden. Teilweise hatte ich damit erfolg. Es kam aber auch immer wieder vor, dass ich die ersten schritte übersprungen habe und direckt mit dem Coden angefangen habe. 
