@@ -57,7 +57,7 @@ public class MyClass{
 }
  ________________   ⇩ Anzahl
  |  MyClass     |   1            ___________
- |--------------| <--------------|  String  |
+ |--------------| <>--------------|  String  |
  | -s : String  |                |__________|
  |______________|
 
@@ -109,3 +109,12 @@ public class DummyCass{
 ```
 
 ## B1E
+Natürlich muss man auch Vererbung in einem UML Diagram abbilden. Das kann man einfach durch einen einfachen Pfeil mit einem Weisen Pfeilkopf machen. Am ende steht allerdings natürlich keine Zahl. Falls es sich bei der Parentklasse um eine abstrakte Klasse handelt wird diese mit _kursiver schrift_ dargestellt. Das gilt nichtnur für Klassen sondern auch für Methoden welche abstrakt sind. Als letztes gibt es da noch die Interfaces. DIese werden mit einem `<<interface>>` über dem Klassnnamen dargestellt.
+```java
+public interface MyInt{}
+
+___________________
+|  <<interface>>  |
+|      MyInt      |
+|_________________|
+```
