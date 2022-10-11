@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
 ```python
 print("Hello World")
 ```
-Beim OOP ist die Idee, dass man zuerst überlegt welche Funkionen und dadurch Klassen ein Programm haben soll. Anschlissend kann man damit beginnen diese Klassen zu erstellen und zu Implementieren.  
+Beim OOP ist die Idee, dass man zuerst überlegt welche Funkionen und dadurch Klassen ein Programm haben soll. Anschlissend kann man damit beginnen diese Klassen zu erstellen und zu Implementieren. Eine Möglichkeit um die ganzen Klassen zu Planen sind sogennante UMLs, welche ich im HZ2 behandle. 
 
 ## A1F
 ### Verbindungen zwischen den Klassen
