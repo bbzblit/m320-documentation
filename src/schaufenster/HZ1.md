@@ -3,36 +3,32 @@
 # Schaufenster HZ1
 
 ## A1G 
-### Aufbau eines Klassendiagramms
-Ein Klassendiagramm besteht aus mehreren Klassen mit Beziehungen untereinander. Jede einzelne Karte bildet eine einzelne Klasse dar. Dabei zeigt es an, welche Methoden, Attrbute und Konstruktoren die Klasse besitzt. Der Aufbau sollte relativ selbsterklärend anhand des unteren Beispieles sein. Acces Modefier können entweder `+` für `public` oder `-` für `private` sein. Ausserdem kann der Rückgabewert auch weggelassen werden, falls es sch dabei um `void` handelt. 
+### Grundlagen OOP
+Die Idee hinter Opjekt Orientierten Programmieren ist es, alles in Klassen zu speichern von denen jede Klasse seine eigene Aufgabe hat. Dabei kann jedes Objekt mit anderen Objekten über schnittstellen (methoden) komunizieren. Der Vorteil davon ist eine sehr grosse Austauschbarkeit und eine bessere Struktur. Falls man eine bestimmte Funktion vom Programm abändern möchte muss man nur wenige Klassen editieren oder gegebenfalls austauschen. Auch kann man durch das Hinzufügen von Objekten relativ schnell eine Applikation erweitern. Anderst als bei anderen Programmiersprachen wie `Python` oder auch `C++` wird man in Java quasi in das Objektorientierte Denken gezwungen. Dass sieht man z.B. daran, dass man kein Java Programm ohne mindestens eine Klasse erstellen kann <br/>
+**Hello World Beispiele:**<br/>
+**Java:**
 ```java
-public class MyClass{
-    public int attr1;
-    public boolean attr2;
-    
-    public MyClass(int arg1){}
-    private MyClass(){}
-    
-    public void method1(){}
-    
-    private String method2(String argv){return argv;}
-
+public class Main{ // <- Minimum Java Class
+    public static void main(String ... args){
+        System.out.println("Hello World"); 
+   }
 }
-
-___________________________________
-|            MyClass              | <-------- Klassen Name
-|-------------------------------  |
-|  ⇩ Acces Modefier               |
-|  +attr1 : int                   | <-------- Klassen Atribute
-|  +attr2 : boolean <-- Datentyp  | 
-|-------------------------------  |
-|            ⇩ Paramether         |  
-|  +MyClass(arg1 : int)           | <-------- Konstruktoren
-|  -MyClass()                     |
-|  +method1()     Rückgabewert ⇩  | <--------- Methoden
-|  +method2(argv : String):String |
-|_________________________________|
 ```
+**C++**
+```cpp
+#include <iostream>
+
+int main(int argc, char** argv) {
+    std::cout << "Hello World" << std::endl;
+    return 0;
+}
+```
+**Python**
+```python
+print("Hello World")
+```
+Beim OOP ist die Idee, dass man zuerst überlegt welche Funkionen und dadurch Klassen ein Programm haben soll. Anschlissend kann man damit beginnen diese Klassen zu erstellen und zu Implementieren.  
+
 ## A1F
 ### Verbindungen zwischen den Klassen
 Eine einfachen Assoziation (Verbindung) entsteht, wenn man z.B. bei der einen Klasse ein Attribut in Form von der anderen Klasse verwendet. Dabei gibt man bei einer Assoziation immer die Multiplizität an.
