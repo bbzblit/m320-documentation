@@ -1,0 +1,5 @@
+1. Ja sie wurde gut umgesetzt attribute sind private und nur über getter und setter zu erreichen
+
+2. .getBalance();
+
+3. .setBalance(ammount);
