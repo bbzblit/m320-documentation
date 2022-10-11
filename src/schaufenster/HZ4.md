@@ -301,3 +301,14 @@ public class Car implements Fahrzeug{
 
 ```
 
+### Beispiele von Interfaces
+In Java gibt es ein Interface `java.util.List`. Dies ist ein Interface, welches die gesamte Struktur für eine Liste Implementiert. Z.b gibt es eine Methode `.add(Object)` mit dessen Hilfe man ein Objekt an der Liste anfügen kann. Nun gibt es allerdings mehrere Möglichkeiten wie man eine Liste implementieren kann. Zum einen gibt es da die `ArrayList` welche kurz gesagt einfach ein normaler JavaArray ist. Die andere Möglichkeit ist eine `LinkedList`. Bei ihr hat jedes element in der Liste 2 Pointer. Einen davon zeigt auf das Element davor, der andere auf das nächste Element in der Liste. 
+Nun könnte es natürlich vorkommen, dass man sich während dem entwicklen dazu entscheided, dass doch eine `LinkedList` sinvoller währe als eine `ArrayList`. Wenn man nun eine `List` als Datentyp gewählt hat kann man das ganz einfach und schnell austauschen.
+
+```java
+public class Main{
+    public static void main(String ... args){
+        List<String> list = new ArrayList<String>();
+    }
+}
+```
