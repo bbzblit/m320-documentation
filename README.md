@@ -32,5 +32,5 @@ Ich denke, dass ich im Modul gut mitgekommen bin. Ich konnte meine ganze Vorerfa
 <br/>
 Ich fand das Schreiben eines Lernjournales auch praktisch und lehrich. Damit konnte ich mich noch einmal darüber versichern, dass ich wirklich alles korrekt verstanden habe.
 
-<iframe src="https://www.stackoverflow.com" title="W3Schools Free Online Web Tutorials"></iframe>
+<iframe height="50rem" width="100%" src="https://www.stackoverflow.com" title="W3Schools Free Online Web Tutorials"></iframe>
 
