@@ -32,3 +32,5 @@ Ich denke, dass ich im Modul gut mitgekommen bin. Ich konnte meine ganze Vorerfa
 <br/>
 Ich fand das Schreiben eines Lernjournales auch praktisch und lehrich. Damit konnte ich mich noch einmal darüber versichern, dass ich wirklich alles korrekt verstanden habe.
 
+# UML Links and Good to know
+https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/ 
